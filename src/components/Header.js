@@ -5,14 +5,14 @@ export class Header extends Component {
   render() {
     return (
       <div>
-        <div className='shadow flex flex-row justify-between items-start h-16 px-6 lg:px-44 xl:px-60 font-medium text-sm py-4'>
-          <div>
+        <div className='shadow flex flex-row justify-between items-start h-16 px-6 lg:px-44 xl:px-60 font-medium text-sm'>
+          <div className='mt-5'>
           <Link to='/'>
             <h1>SSG Security</h1>
           </Link>
           </div>
 
-          <div className='flex flex-row'>
+          <div className='flex flex-row mt-5'>
             <Link to='/clearning-services'>
                 <p className='mx-2'>Cleaning Services</p>
             </Link>
