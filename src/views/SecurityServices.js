@@ -165,7 +165,7 @@ export default function SecurityServices() {
        {/* UK */}
       <div className='bg-red-700 px-6 lg:px-44 xl:px-60 py-10 grid md:grid-cols-3 gap-2'>
           <h2 className='text-2xl text-white font-semibold'>We provide security services all over the UK</h2>
-          <img src={uk} className='h-auto md:pr-16 mt-4' alt='uk' />
+          <img src={uk} className='h-auto w-40 md:w-auto md:pr-16 mt-4' alt='uk' />
           <div>
             <h3 className='text-white text-xl font-semibold'>Best in class Security</h3>
               <div>
@@ -190,7 +190,7 @@ export default function SecurityServices() {
       <div className='bg-gray-200 '>
       {/* <h2 className='text-2xl text-gray-800 font-semibold px-6 lg:px-44 xl:px-60'>Gallery</h2> */}
           {/* <hr className='border-gray-500 my-4 mb-6 px-6 lg:px-44 xl:px-60' /> */}
-    <div className='grid-cols-2 grid lg:grid-cols-4 gap-0'>
+    <div className='grid-cols-2 grid md:grid-cols-4 gap-0'>
         <div className=''>
             <img src={g1} className='h-auto w-full' alt='Security' />
           </div>
@@ -216,7 +216,6 @@ export default function SecurityServices() {
           <div className=''>
             <img src={g8} className='h-auto w-full' alt='Security' />
           </div>
-          
     </div>
           
       </div>
