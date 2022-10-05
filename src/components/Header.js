@@ -13,14 +13,14 @@ export class Header extends Component {
           </div>
 
           <div className='flex flex-row mt-5'>
-            <Link to='/clearning-services'>
-                <p className='mx-2'>Cleaning Services</p>
-            </Link>
             <Link to='/security-services'>
                 <p className='mx-2'>Security Services</p>
             </Link>
-            <Link to='/training-services'>
-                <p className='mx-2'>Security Training</p>
+            <Link to='/clearning-services'>
+                <p className='mx-2'>Cleaning Services</p>
+            </Link>
+            <Link to='/boxing'>
+                <p className='mx-2'>Boxing</p>
             </Link>
             <Link to='/contactus'>
               <p className='mx-2'>Contact us</p>
