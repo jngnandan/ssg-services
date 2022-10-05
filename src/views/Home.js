@@ -229,19 +229,19 @@ export default function Home() {
         <form className='grid grid-cols-2 gap-4' type='submit'>
             <label className='flex flex-col font-medium text-sm text-gray-800'>
               First Name:
-              <input className='mt-1 px-4 py-1 bg-transparent rounded outline outline-2 outline-offset-0 outline-red-700 focus:outline-red-400' type="text" name="name" />
+              <input className='mt-1 h-8 px-4 py-1 bg-transparent rounded outline outline-2 outline-offset-0 outline-red-700 focus:outline-red-400' type="text" name="name" />
             </label>
             <label className='flex flex-col font-medium text-sm text-gray-800'>
               Last Name:
-              <input className='mt-1 px-4 py-1 bg-transparent rounded outline outline-2 outline-offset-0 outline-red-700 focus:outline-red-400' type="text" name="name" />
+              <input className='mt-1 h-8 px-4 py-1 bg-transparent rounded outline outline-2 outline-offset-0 outline-red-700 focus:outline-red-400' type="text" name="name" />
             </label>
             <label className='flex flex-col font-medium text-sm text-gray-800'>
               Email:
-              <input className='mt-1 px-4 py-1 bg-transparent rounded outline outline-2 outline-offset-0 outline-red-700 focus:outline-red-400' type="email" name="email" />
+              <input className='mt-1 h-8 px-4 py-1 bg-transparent rounded outline outline-2 outline-offset-0 outline-red-700 focus:outline-red-400' type="email" name="email" />
             </label>
             <label className='flex flex-col font-medium text-sm text-gray-800'>
               Service Interested:
-              <input className='mt-1 px-4 py-1 bg-transparent rounded outline outline-2 outline-offset-0 outline-red-700 focus:outline-red-400' type="text" name="text" />
+              <input className='mt-1 h-8 px-4 py-1 bg-transparent rounded outline outline-2 outline-offset-0 outline-red-700 focus:outline-red-400' type="text" name="text" />
             </label>
             <button className='mt-3 shadow w-40 rounded-md bg-red-700 hover:bg-red-900 text-white px-4 font-medium text-sm h-10'>Submit</button>
 
