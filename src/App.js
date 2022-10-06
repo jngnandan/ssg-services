@@ -4,10 +4,10 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import ContactUs from './views/ContactUs';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import TrainingServices from './views/Boxing/Boxing';
+import TrainingServices from './views/Boxing';
 import CleaningServices from './views/CleaningServices'
 
-import Boxing from '../src/views/Boxing/Boxing'
+import Boxing from './views/Boxing'
 import SecurityServices from '../src/views/SecurityServices'
 
 function App() {

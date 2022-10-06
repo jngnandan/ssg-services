@@ -60,7 +60,7 @@ export default function CleaningServices() {
                   We Provide right Solutions
               </h1>
                 <div className='mt-6 md:flex md:row'>
-                  <button className='shadow mb-6 w-40 rounded-md bg-red-700 hover:bg-red-900 text-white px-4 outline outline-2 font-medium text-sm h-10'>Contact Us</button>
+                  <button className='shadow md:mb-6 mb-4 w-40 rounded-md bg-red-700 hover:bg-red-900 text-white px-4 outline outline-2 font-medium text-sm h-10'>Contact Us</button>
                   {/* <button className='shadow w-40 ml-4 rounded-md outline outline-2 outline-offset-0 outline-red-700 hover:outline-red-400 text-red-700 hover:text-red-400 px-4 h-10 font-medium text-sm'>Our Services</button> */}
 
               </div>
@@ -68,7 +68,7 @@ export default function CleaningServices() {
               </div>
               {/* text 2 */}
               <div>
-              <p className='text-sm text-gray-800 mt-2 lg:w-120 font-semibold'>Lorem ipsum dolor sit amet, consectetur adipectus and hrstuv</p>
+              <p className='text-sm text-gray-800 md:mt-2 lg:w-120 font-semibold'>Lorem ipsum dolor sit amet, consectetur adipectus and hrstuv</p>
               <p className='text-sm text-gray-500 my-2 lg:w-120'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.ut labore et dolore magna aliqua. Ut enim ad minim veniam.ut labore et dolore magna aliqua. Ut enim ad minim.</p>
               </div>
             </div>
