@@ -37,15 +37,15 @@ export default function SecurityServices() {
   return (
     <div>
         {/* Header */}
-      <div className='bg-gray-100 pt-6 px-6 lg:px-44 xl:px-60 grid-row-2 items-start grid md:grid-cols-2 gap-1'>
+      <div className='bg-gray-100 pt-10 pb-4 px-6 md:px-16 lg:px-44 xl:px-60 grid-row-2 items-start grid md:grid-cols-2 gap-1'>
         {/* Text */}
-        <div>
+        <div className='pr-6'>
         <h1 className='text-xl md:text-3xl font-semibold text-gray-800'>
             We Solve your Security Needs
         </h1>
         <p className='text-sm text-gray-500 my-4 lg:w-120'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
         
-          <div className='mb-6 md:flex md:flexrow'>
+          <div className='mb-6 md:flex md:row'>
             <button className='shadow w-40 rounded-md bg-red-700 hover:bg-red-900 text-white px-4 outline outline-2 font-medium text-sm h-10'>Our Services</button>
             <button className='shadow w-40 ml-4 rounded-md outline outline-2 outline-offset-0 outline-red-700 hover:outline-red-400 text-red-700 hover:text-red-400 px-4 h-10 font-medium text-sm'>Our Services</button>
 
@@ -55,7 +55,7 @@ export default function SecurityServices() {
         <img src={header} className='mb-6 h-auto w-full md:h-56 lg:h-80' alt='Security Needs' />
       </div>
          {/* Companies */} 
-      <div className='grid grid-cols-5 gap-2 items-center px-6 lg:px-44 xl:px-60 my-4'>
+      <div className='grid grid-cols-5 gap-2 items-center px-6 md:px-16 lg:px-44 xl:120 my-4'>
           <img src={o2} />
           <img src={wembley} />
           <img src={alexander_palace} />
@@ -65,7 +65,7 @@ export default function SecurityServices() {
 
 
       {/* Here's how SSG Security can benefit your business */}
-      <div className='bg-red-700 px-6 lg:px-44 xl:px-60 py-10'>
+      <div className='bg-red-700 px-6 md:px-16 lg:px-44 xl:px-60 py-10'>
         <h2 className='text-2xl text-white font-semibold'>Here's how SSG Security can benefit your business</h2>
         <div className='grid grid-cols-3 gap-4 mt-4'>
           <div className='bg-white p-4 rounded-md'>
@@ -89,7 +89,7 @@ export default function SecurityServices() {
         </div>
       </div>
       {/* Our services */}
-      <div className='bg-gray-200 px-6 lg:px-44 xl:px-60 py-10'>
+      <div className='bg-gray-100 px-6 md:px-16 lg:px-44 xl:px-60 py-10'>
       <h2 className='text-2xl text-gray-800 font-semibold'>Our Services</h2>
           <hr className='border-gray-500 my-4 mb-6' />
 
@@ -163,7 +163,7 @@ export default function SecurityServices() {
           
       </div>
        {/* UK */}
-      <div className='bg-red-700 px-6 lg:px-44 xl:px-60 py-10 grid md:grid-cols-3 gap-2'>
+      <div className='bg-red-700 px-6 md:px-16 lg:px-44 xl:px-60 py-6 grid md:grid-cols-3 gap-2'>
           <h2 className='text-2xl text-white font-semibold'>We provide security services all over the UK</h2>
           <img src={uk} className='h-auto w-40 md:w-auto md:pr-16 mt-4' alt='uk' />
           <div>
@@ -187,7 +187,7 @@ export default function SecurityServices() {
       </div>
 
       {/* Gallery */}
-      <div className='bg-gray-200 '>
+      <div className='bg-gray-100 '>
       {/* <h2 className='text-2xl text-gray-800 font-semibold px-6 lg:px-44 xl:px-60'>Gallery</h2> */}
           {/* <hr className='border-gray-500 my-4 mb-6 px-6 lg:px-44 xl:px-60' /> */}
     <div className='grid-cols-2 grid md:grid-cols-4 gap-0'>
@@ -221,7 +221,7 @@ export default function SecurityServices() {
       </div>
 
             {/* Get in Touch with Us */}
-            <div className='bg-gray-200 px-6 lg:px-44 xl:px-60 py-10'>
+            <div className='bg-gray-100 px-6 md:px-16 lg:px-44 xl:px-60 py-10'>
       <h2 className='text-2xl text-gray-800 font-semibold'>Contact Us</h2>
           <hr className='border-gray-500 my-4 mb-6' />
           

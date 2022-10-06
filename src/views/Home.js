@@ -38,7 +38,7 @@ export default function Home() {
   return (
     <div>
             {/* Our services */}
-            <div className='bg-gray-200 px-6 lg:px-44 xl:px-60 py-10 h-fill pb-16'>
+            <div className='bg-gray-100 px-6 lg:px-44 xl:px-60 py-10 h-fill pb-16'>
       <h2 className='text-2xl text-gray-800 font-semibold'>Our Services</h2>
           <hr className='border-gray-500 my-4 mb-6' />
 

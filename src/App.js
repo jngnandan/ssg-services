@@ -5,7 +5,7 @@ import ContactUs from './views/ContactUs';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import TrainingServices from './views/Boxing/Boxing';
-import CleaningServices from '../src/views/Cleaning/CleaningServices'
+import CleaningServices from './views/CleaningServices'
 
 import Boxing from '../src/views/Boxing/Boxing'
 import SecurityServices from '../src/views/SecurityServices'

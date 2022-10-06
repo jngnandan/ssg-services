@@ -5,7 +5,7 @@ export class Header extends Component {
   render() {
     return (
       <div>
-        <div className='shadow flex flex-row justify-between items-start h-16 px-6 lg:px-44 xl:px-60 font-medium text-sm'>
+        <div className='shadow flex flex-row justify-between items-start h-16 px-6 md:px-16 lg:px-44 xl:px-60 font-medium text-sm'>
           <div className='mt-5'>
           <Link to='/'>
             <h1>SSG Security</h1>
