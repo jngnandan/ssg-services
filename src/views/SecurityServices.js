@@ -31,6 +31,8 @@ import gallow_glass from '../../src/assets/icons/gallow_glass.svg'
 import check from '../../src/assets/icons/check.svg'
 import { Input } from 'postcss'
 
+import { HashLink as Link } from 'react-router-hash-link';
+
 
 export default function SecurityServices() {
 
@@ -46,8 +48,12 @@ export default function SecurityServices() {
         <p className='text-sm text-gray-500 my-4 lg:w-120'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
         
           <div className='mb-6 md:flex md:row'>
-            <button className='shadow w-40 rounded-md bg-red-700 hover:bg-red-900 text-white px-4 outline outline-2 font-medium text-sm h-10'>Our Services</button>
-            <button className='shadow w-40 ml-4 rounded-md outline outline-2 outline-offset-0 outline-red-700 hover:outline-red-400 text-red-700 hover:text-red-400 px-4 h-10 font-medium text-sm'>Our Services</button>
+          <Link to='#services'>
+          <button className='shadow w-40 rounded-md bg-red-700 hover:bg-red-900 text-white px-4 outline outline-2 font-medium text-sm h-10'>Our Services</button>
+          </Link>
+          <Link to='#contactus'>
+          <button className='shadow w-40 ml-4 rounded-md outline outline-2 outline-offset-0 outline-red-700 hover:outline-red-400 text-red-700 hover:text-red-400 px-4 h-10 font-medium text-sm'>Contact Us</button>
+          </Link>
 
           </div>
         </div>
@@ -89,7 +95,7 @@ export default function SecurityServices() {
         </div>
       </div>
       {/* Our services */}
-      <div className='bg-gray-100 px-6 md:px-16 lg:px-44 xl:px-60 py-10'>
+      <div id='services' className='bg-gray-100 px-6 md:px-16 lg:px-44 xl:px-60 py-10'>
       <h2 className='text-2xl text-gray-800 font-semibold'>Our Services</h2>
           <hr className='border-gray-500 my-4 mb-6' />
 
@@ -221,7 +227,7 @@ export default function SecurityServices() {
       </div>
 
             {/* Get in Touch with Us */}
-            <div className='bg-gray-100 px-6 md:px-16 lg:px-44 xl:px-60 py-10'>
+            <div id='contactus' className='bg-gray-100 px-6 md:px-16 lg:px-44 xl:px-60 py-10'>
       <h2 className='text-2xl text-gray-800 font-semibold'>Contact Us</h2>
           <hr className='border-gray-500 my-4 mb-6' />
           

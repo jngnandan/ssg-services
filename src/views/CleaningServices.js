@@ -30,6 +30,10 @@ import wembley from '../../src/assets/icons/wembley.svg'
 import ap from '../../src/assets/icons/ap.svg'
 import gallow_glass from '../../src/assets/icons/gallow_glass.svg'
 import check from '../../src/assets/icons/check.svg'
+
+import { HashLink as Link } from 'react-router-hash-link';
+
+
 export default function CleaningServices() {
   return (
     <div>
@@ -60,7 +64,9 @@ export default function CleaningServices() {
                   We Provide right Solutions
               </h1>
                 <div className='mt-6 md:flex md:row'>
-                  <button className='shadow md:mb-6 mb-4 w-40 rounded-md bg-red-700 hover:bg-red-900 text-white px-4 outline outline-2 font-medium text-sm h-10'>Contact Us</button>
+                <Link to='#contactus'>
+                <button className='shadow md:mb-6 mb-4 w-40 rounded-md bg-red-700 hover:bg-red-900 text-white px-4 outline outline-2 font-medium text-sm h-10'>Contact Us</button>
+                </Link>
                   {/* <button className='shadow w-40 ml-4 rounded-md outline outline-2 outline-offset-0 outline-red-700 hover:outline-red-400 text-red-700 hover:text-red-400 px-4 h-10 font-medium text-sm'>Our Services</button> */}
 
               </div>
@@ -128,7 +134,7 @@ export default function CleaningServices() {
       </div>
 
       {/* Get in Touch with Us */}
-      <div className='bg-white px-6 md:px-16 lg:px-44 xl:px-60 py-10'>
+      <div id='contactus' className='bg-white px-6 md:px-16 lg:px-44 xl:px-60 py-10'>
       <h2 className='text-2xl text-gray-800 font-semibold'>Contact Us</h2>
           <hr className='border-gray-500 my-4 mb-6' />
           

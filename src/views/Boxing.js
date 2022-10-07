@@ -34,8 +34,12 @@ import wembley from '../../src/assets/icons/wembley.svg'
 import ap from '../../src/assets/icons/ap.svg'
 import gallow_glass from '../../src/assets/icons/gallow_glass.svg'
 import check from '../../src/assets/icons/check.svg'
+import checker from '../../src/assets/icons/checker.svg'
+
 import whatsapp from '../../src/assets/icons/whatsapp.svg'
 import call from '../../src/assets/icons/call.svg'
+
+import { HashLink as Link } from 'react-router-hash-link';
 
 
 
@@ -43,7 +47,7 @@ export default function Boxing() {
   return (
     <div>
       {/* Header */}
-      <div className='bg-black pt-10 pb-4 px-6 md:px-16 lg:px-44 xl:px-60 grid-row-2 items-start grid md:grid-cols-2 gap-1'>
+      <div className='bg-black pt-10 pb-8 px-6 md:px-16 lg:px-44 xl:px-60 grid-row-2 items-start grid md:grid-cols-2 gap-1'>
         {/* Text */}
         <div className='pr-6'>
         <h1 className='text-xl md:text-3xl font-semibold text-white'>
@@ -89,14 +93,16 @@ export default function Boxing() {
                     
             <div className='mb-6 md:flex md:row pt-6 pl-4'>
             <button className='shadow w-40 rounded-md bg-white hover:bg-red-400 text-transparant px-4 font-medium text-sm h-10'>Join Now</button>
+            <Link to='#contactus'>
             <button className='shadow w-40 ml-4 rounded-md outline outline-2 outline-offset-0 outline-white hover:outline-red-400 text-white hover:text-red-400 px-4 h-10 font-medium text-sm'>Contact Us</button>
+            </Link>
 
           </div>
           </div>
         </div>
       </div>
 
-                      {/* Our services */}
+                      {/* Our Benefits */}
                       <div className='px-6 md:px-16 lg:px-44 xl:px-60 py-5 pb-10 bg-gray-100'>
       <h2 className='text-2xl text-gray-800 font-semibold'>Our Benefits</h2>
           <hr className='border-gray-500 my-4 mb-6' />
@@ -116,7 +122,7 @@ export default function Boxing() {
           
       </div>
       
-       {/* Benefits */}
+       {/* Features */}
        <div className='bg-black px-6 md:px-16 lg:px-44 xl:px-60 py-10 grid md:grid-cols-2 gap-2'>
           <div className='pr-2'>
           <h2 className='text-2xl text-white font-semibold'>The Features</h2>
@@ -143,6 +149,54 @@ export default function Boxing() {
           </div>
       </div>
 
+      {/* Our Plans */}
+      <div id='services' className='bg-gray-100 px-6 md:px-16 lg:px-44 xl:px-60 py-8'>
+      <h2 className='text-2xl text-gray-800 font-semibold'>Our Plans</h2>
+          <hr className='border-gray-500 my-4 mb-6' />
+
+    <div className='grid-cols-2 grid md:grid-cols-2 gap-4'>
+    {/* plan */}
+        <div className='bg-white rounded-md shadow-md flex flex-col justify-center items-start'>
+            <div className='p-4 mb-4'>
+            <div>
+            <p className='font-medium text-gray-600 pb-2'>Yearly Membership</p>
+            <p className='text-sm text-gray-800'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </div>           
+             <hr className='border-gray-500 my-4 mt-6' />
+            
+              <p className='text-2xl text-gray-800 font-medium my-3'>£60 <span className='text-sm font-normal text-gray-800'>/ month</span></p>
+            <div className='flex flex-row'>
+            <Link href='#contactus' className='flex flex-col justify-center items-center shadow w-full rounded-md outline outline-2 outline-offset-0 outline-gray-800 hover:outline-gray-800 text-gray-800 hover:text-black h-10 font-medium text-sm'>
+            <button >Contact Us</button>
+            </Link>            
+            </div>
+
+            </div>
+          </div>
+          <div className='bg-white rounded-md shadow-md flex flex-col justify-center items-start'>
+            <div className='p-4 mb-4'>
+            <div>
+            <div className='flex flex-row justify-start items-start'>
+            <p className='font-medium text-gray-600 pb-2'>Yearly Membership</p>
+            <p className='text-sm font-medium bg-gray-400 px-2 rounded w-12 text-center text-white h-6 ml-2 pt-0.5'>Best</p>
+            </div>
+            <p className='text-sm text-gray-800'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </div>
+            
+            <hr className='border-gray-500 my-4 mt-6' />
+            
+              <p className='text-2xl text-gray-800 font-medium my-3'>£45 <span className='text-sm font-normal text-gray-800'>/ month</span></p>
+            <div className='flex flex-row'>
+            <Link href='#contactus' className='flex flex-col justify-center items-center shadow w-full rounded-md outline outline-2 outline-offset-0 outline-gray-800 hover:outline-gray-800 text-gray-800 hover:text-black h-10 font-medium text-sm'>
+            <button >Contact Us</button>
+            </Link>
+            </div>
+
+            </div>
+          </div>
+    </div>
+          
+      </div>
 
 
       {/* Gallery */}
@@ -180,28 +234,28 @@ export default function Boxing() {
       </div>
 
       {/* Get in Touch with Us */}
-      <div className='bg-gray-100 px-6 md:px-16 lg:px-44 xl:px-60 py-10'>
-      <h2 className='text-2xl text-gray-800 font-semibold'>Contact Us</h2>
-          <hr className='border-gray-500 my-4 mb-6' />
+      <div id='contactus' className='bg-black px-6 md:px-16 lg:px-44 xl:px-60 py-10'>
+      <h2 className='text-2xl text-gray-400 font-semibold'>Contact Us</h2>
+          <hr className='border-gray-400 my-4 mb-6' />
           
         <form className='grid grid-cols-2 gap-4' type='submit'>
-            <label className='flex flex-col font-medium text-sm text-gray-800'>
+            <label className='flex flex-col font-medium text-sm text-gray-400'>
               First Name:
-              <input className='mt-1 h-8 px-4 py-1 bg-transparent rounded outline outline-2 outline-offset-0 outline-red-700 focus:outline-red-400' type="text" name="name" />
+              <input className='mt-1 h-8 px-4 py-1 bg-transparent rounded outline outline-2 outline-offset-0 outline-gray-400 focus:outline-red-400' type="text" name="name" />
             </label>
-            <label className='flex flex-col font-medium text-sm text-gray-800'>
+            <label className='flex flex-col font-medium text-sm text-gray-400'>
               Last Name:
-              <input className='mt-1 h-8 px-4 py-1 bg-transparent rounded outline outline-2 outline-offset-0 outline-red-700 focus:outline-red-400' type="text" name="name" />
+              <input className='mt-1 h-8 px-4 py-1 bg-transparent rounded outline outline-2 outline-offset-0 outline-gray-400 focus:outline-red-400' type="text" name="name" />
             </label>
-            <label className='flex flex-col font-medium text-sm text-gray-800'>
+            <label className='flex flex-col font-medium text-sm text-gray-400'>
               Email:
-              <input className='mt-1 h-8 px-4 py-1 bg-transparent rounded outline outline-2 outline-offset-0 outline-red-700 focus:outline-red-400' type="email" name="email" />
+              <input className='mt-1 h-8 px-4 py-1 bg-transparent rounded outline outline-2 outline-offset-0 outline-gray-400 focus:outline-red-400' type="email" name="email" />
             </label>
-            <label className='flex flex-col font-medium text-sm text-gray-800'>
+            <label className='flex flex-col font-medium text-sm text-gray-400'>
               Service Interested:
-              <input className='mt-1 h-8 px-4 py-1 bg-transparent rounded outline outline-2 outline-offset-0 outline-red-700 focus:outline-red-400' type="text" name="text" />
+              <input className='mt-1 h-8 px-4 py-1 bg-transparent rounded outline outline-2 outline-offset-0 outline-gray-400 focus:outline-red-400' type="text" name="text" />
             </label>
-            <button className='mt-3 shadow w-40 rounded-md bg-red-700 hover:bg-red-900 text-white px-4 font-medium text-sm h-10'>Submit</button>
+            <button className='mt-3 shadow w-40 rounded-md bg-white hover:bg-gray-200 text-black px-4 font-medium text-sm h-10'>Submit</button>
 
         </form>
       </div>
