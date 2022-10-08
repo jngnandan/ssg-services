@@ -55,13 +55,15 @@ export default function CleaningServices() {
               {/* Image */}
           <img src={cleaning} className='object-cover h-80 lg:h-96 w-full mt-1' />
           {/* Second section */}
-          <div className='px-6 '>
+          <div className=''>
+          <div className='px-6'>
           <hr className='border-gray-500 mt-4 mb-3 mt-8' />
+          </div>
           <div className='pt-3 pb-4 px-6 md:px-16 lg:px-44 xl:px-60 grid-row-2 items-start grid md:grid-cols-2 gap-1'>
               {/* Text */}
               <div className='pr-6'>
-              <h1 className='text-xl md:text-3xl font-semibold text-gray-800'>
-                  We Provide right Solutions
+              <h1 className='text-xl md:text-3xl font-semibold text-gray-500'>
+                  We Provide the right Solutions
               </h1>
                 <div className='mt-6 md:flex md:row'>
                 <Link to='#contactus'>
@@ -85,7 +87,7 @@ export default function CleaningServices() {
       <h2 className='text-2xl text-gray-800 font-semibold'>Our Services</h2>
           <hr className='border-gray-500 my-4 mb-6' />
 
-    <div className='grid-cols-2 grid md:grid-cols-3 gap-4'>
+    <div className='grid md:grid-cols-3 gap-4'>
         <div className='bg-white rounded-md shadow-md'>
             <img src={eventSecurity} className='h-auto w-full' alt='Security' />
             <div className='p-4 mb-4'>

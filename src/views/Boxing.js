@@ -107,7 +107,7 @@ export default function Boxing() {
       <h2 className='text-2xl text-gray-800 font-semibold'>Our Benefits</h2>
           <hr className='border-gray-500 my-4 mb-6' />
 
-    <div className='grid grid-cols-2 gap-4'>
+    <div className='grid md:grid-cols-2 gap-4'>
         <div className='pr-2 md:pr-5 px-1 md:px-5 bg-white rounded-md shadow-md my-1 bg-cover flex flex-col justify-center h-52 items-start bg-center' style={{backgroundImage: `url(${boxing})`}}>
         <p className='text-md md:text-xl font-semibold text-white pl-4 pb-2'>Personalised Training</p>
         <p className='text-sm text-white pl-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
@@ -154,7 +154,7 @@ export default function Boxing() {
       <h2 className='text-2xl text-gray-800 font-semibold'>Our Plans</h2>
           <hr className='border-gray-500 my-4 mb-6' />
 
-    <div className='grid-cols-2 grid md:grid-cols-2 gap-4'>
+    <div className='grid md:grid-cols-2 gap-4'>
     {/* plan */}
         <div className='bg-white rounded-md shadow-md flex flex-col justify-center items-start'>
             <div className='p-4 mb-4'>

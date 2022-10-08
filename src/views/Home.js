@@ -32,9 +32,11 @@ import check from '../../src/assets/icons/check.svg'
 import { Input } from 'postcss'
 
 import { Link } from 'react-router-dom'
-
+import { useContext } from 'react'
+import { ServicesContext } from '../context/ServicesContext'
 export default function Home() {
-
+    const {security} = useContext(ServicesContext)
+      // console.log(security)
   return (
     <div>
             {/* Our services */}

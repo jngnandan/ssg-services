@@ -32,10 +32,14 @@ import check from '../../src/assets/icons/check.svg'
 import { Input } from 'postcss'
 
 import { HashLink as Link } from 'react-router-hash-link';
-
+import {useContext} from 'react'
+import {ServicesContext} from '../../src/context/ServicesContext.js'
+import SecuritySection from '../../src/views/Security/SecuritySection.js'
+import {Oval} from 'react-loader-spinner'
 
 export default function SecurityServices() {
-
+  const {security, loading} = useContext(ServicesContext)
+  // console.log(security)
   return (
     <div>
         {/* Header */}
@@ -94,80 +98,35 @@ export default function SecurityServices() {
           </div>
         </div>
       </div>
-      {/* Our services */}
-      <div id='services' className='bg-gray-100 px-6 md:px-16 lg:px-44 xl:px-60 py-10'>
-      <h2 className='text-2xl text-gray-800 font-semibold'>Our Services</h2>
+{/* New Services */}
+     <div id='services' className='bg-gray-100 px-6 md:px-16 lg:px-44 xl:px-60 py-10'>
+      <h2 className='text-2xl text-gray-800 font-semibold'>New</h2>
           <hr className='border-gray-500 my-4 mb-6' />
+          {loading ? 
+            <div className='flex flex-col justify-center items-center h-50'>
+              <Oval
+              height={80}
+              width={80}
+              color="red"
+              wrapperStyle={{}}
+              wrapperClass=""
+              visible={true}
+              ariaLabel='oval-loading'
+              secondaryColor="red"
+              strokeWidth={2}
+              strokeWidthSecondary={2}
+              />
+            </div>
+            :
+            <div className='grid-cols-1 grid md:grid-cols-3 gap-4'>
+              {security.map(post => 
+              <SecuritySection post={post} key={post.id} />)}
 
-    <div className='grid-cols-1 grid md:grid-cols-3 gap-4'>
-        <div className='bg-white rounded-md shadow-md'>
-            <img src={eventSecurity} className='h-auto w-full' alt='Security' />
-            <div className='p-4 mb-4'>
-            <p className='font-medium text-gray-600 pb-2'>Event Security</p>
-            <p className='text-sm text-gray-800'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
             </div>
-          </div>
-          <div className='bg-white rounded-md shadow-md'>
-            <img src={retailSecurity} className='h-auto w-full' alt='Security' />
-            <div className='p-4'>
-            <p className='font-medium text-gray-600 pb-2'>Retail Security</p>
-            <p className='text-sm text-gray-800'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-          </div>
-          <div className='bg-white rounded-md shadow-md'>
-            <img src={ccvSurvilance} className='h-auto w-full' alt='Security' />
-            <div className='p-4'>
-            <p className='font-medium text-gray-600 pb-2'>CCTV Survilance</p>
-            <p className='text-sm text-gray-800'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-          </div>
-          <div className='bg-white rounded-md shadow-md'>
-            <img src={keyHolding} className='h-auto w-full' alt='Security' />
-            <div className='p-4'>
-            <p className='font-medium text-gray-600 pb-2'>Key Holding</p>
-            <p className='text-sm text-gray-800'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-          </div>
-          <div className='bg-white rounded-md shadow-md'>
-            <img src={doorSupervision} className='h-auto w-full' alt='Security' />
-            <div className='p-4'>
-            <p className='font-medium text-gray-600 pb-2'>Door Supervision</p>
-            <p className='text-sm text-gray-800'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-          </div>
-          <div className='bg-white rounded-md shadow-md'>
-            <img src={mobilePatrol} className='h-auto w-full' alt='Security' />
-            <div className='p-4'>
-            <p className='font-medium text-gray-600 pb-2'>Mobile Patrol</p>
-            <p className='text-sm text-gray-800'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-          </div>
-
-          <div className='bg-white rounded-md shadow-md'>
-            <img src={construction} className='h-auto w-full' alt='Security' />
-            <div className='p-4'>
-            <p className='font-medium text-gray-600 pb-2'>Construction Security</p>
-            <p className='text-sm text-gray-800'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-          </div>
-          <div className='bg-white rounded-md shadow-md'>
-            <img src={vehicleParking} className='h-auto w-full' alt='Security' />
-            <div className='p-4'>
-            <p className='font-medium text-gray-600 pb-2'>Vehicle Parking Security</p>
-            <p className='text-sm text-gray-800'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-          </div>
-          <div className='bg-white rounded-md shadow-md'>
-            <img src={corporateSecurity} className='h-auto w-full' alt='Security' />
-            <div className='p-4'>
-            <p className='font-medium text-gray-600 pb-2'>Corporate Security</p>
-            <p className='text-sm text-gray-800'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-          </div>
-          
-    </div>
-          
+          }
       </div>
+
+
        {/* UK */}
       <div className='bg-red-700 px-6 md:px-16 lg:px-44 xl:px-60 py-6 grid md:grid-cols-3 gap-2'>
           <h2 className='text-2xl text-white font-semibold'>We provide security services all over the UK</h2>
