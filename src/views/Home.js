@@ -42,7 +42,7 @@ export default function Home() {
       <h2 className='text-2xl text-gray-800 font-semibold'>Our Services</h2>
           <hr className='border-gray-500 my-4 mb-6' />
 
-    <div className='grid-cols-2 grid md:grid-cols-3 gap-4 pt-2'>
+    <div className='grid md:grid-cols-3 gap-4 pt-2'>
   
         <div className='bg-white rounded-md shadow-md'>
         <Link to='/security-services'>

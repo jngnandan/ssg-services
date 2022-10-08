@@ -80,21 +80,21 @@ export default function Boxing() {
         <img src={boxing} className='mb-6 h-auto w-full md:h-56 lg:h-80 rounded-md' alt='Security Needs' />
       </div>
 
-            {/* Here's how SSG Security can benefit your business */}
+            {/* JOIN */}
         <div className='px-6 md:px-16 lg:px-44 xl:px-60 py-10'>
         <h2 className='text-2xl text-white font-semibold text-gray-700'>Join Our Membership</h2>
           {/* Image Box */}
         <div className=' mt-4'>
           <div className='flex flex-col justify-center items-start border-red-700 p-4 rounded-md h-72 bg-cover bg-center py-6 grayscale-[40%]' style={{backgroundImage: `url(${personalised})`}}>
             {/* Content */}
-            <p className='text-2xl md:text-md font-medium text-white pb-2 pl-4'>Learn Boxing in 30 days</p>
+            <p className='text-xl pt-5 md:text-2xl md:text-md font-medium text-white pb-2 pl-4'>Learn Boxing in 30 days</p>
             <hr className='border-white pb-3'/>
-            <p className='text-sm text-white pl-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, </p>
+            <p className='text-sm text-white pl-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                     
-            <div className='mb-6 md:flex md:row pt-6 pl-4'>
-            <button className='shadow w-40 rounded-md bg-white hover:bg-red-400 text-transparant px-4 font-medium text-sm h-10'>Join Now</button>
+            <div className='mb-6 flex flex-col md:flex md:flex-row pt-6 pl-4'>
+            <button className='shadow mb-2 w-40 rounded-md bg-white hover:bg-red-400 text-transparant px-4 font-medium text-sm h-10'>Join Now</button>
             <Link to='#contactus'>
-            <button className='shadow w-40 ml-4 rounded-md outline outline-2 outline-offset-0 outline-white hover:outline-red-400 text-white hover:text-red-400 px-4 h-10 font-medium text-sm'>Contact Us</button>
+            <button className='shadow mb-2 w-40 md:ml-4 rounded-md outline outline-2 outline-offset-0 outline-white hover:outline-red-400 text-white hover:text-red-400 px-4 h-10 font-medium text-sm'>Contact Us</button>
             </Link>
 
           </div>
@@ -108,14 +108,14 @@ export default function Boxing() {
           <hr className='border-gray-500 my-4 mb-6' />
 
     <div className='grid grid-cols-2 gap-4'>
-        <div className='pr-5 px-5 bg-white rounded-md shadow-md my-1 bg-cover flex flex-col justify-center h-52 items-start bg-center' style={{backgroundImage: `url(${boxing})`}}>
-        <p className='text-xl font-semibold text-white pl-4 pb-2'>Personalised Training</p>
-        <p className='text-sm text-white pl-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut </p>
+        <div className='pr-2 md:pr-5 px-1 md:px-5 bg-white rounded-md shadow-md my-1 bg-cover flex flex-col justify-center h-52 items-start bg-center' style={{backgroundImage: `url(${boxing})`}}>
+        <p className='text-md md:text-xl font-semibold text-white pl-4 pb-2'>Personalised Training</p>
+        <p className='text-sm text-white pl-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 
           </div>
-          <div className='pr-5 px-5 bg-white rounded-md shadow-md bg-cover flex flex-col justify-center h-52 items-start bg-center' style={{backgroundImage: `url(${boxer})`}}>
-        <p className='text-xl font-semibold text-white pl-4 pb-2'>Individual Plan</p>
-        <p className='text-sm text-white pl-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut </p>
+          <div className='pr-2 md:pr-5 px-1 md:px-5 bg-white rounded-md shadow-md bg-cover flex flex-col justify-center h-52 items-start bg-center' style={{backgroundImage: `url(${boxer})`}}>
+        <p className='text-md md:text-xl font-semibold text-white pl-4 pb-2'>Individual <br /> Plan</p>
+        <p className='text-sm text-white pl-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 
           </div>
     </div>
@@ -159,6 +159,7 @@ export default function Boxing() {
         <div className='bg-white rounded-md shadow-md flex flex-col justify-center items-start'>
             <div className='p-4 mb-4'>
             <div>
+            <p className='text-sm mb-1 font-medium bg-gray-400 rounded w-12 text-center text-white h-6 pt-0.5 invisible'></p>
             <p className='font-medium text-gray-600 pb-2'>Yearly Membership</p>
             <p className='text-sm text-gray-800'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
             </div>           
@@ -176,9 +177,9 @@ export default function Boxing() {
           <div className='bg-white rounded-md shadow-md flex flex-col justify-center items-start'>
             <div className='p-4 mb-4'>
             <div>
+            <p className='text-sm mb-1 font-medium bg-gray-400 rounded w-12 text-center text-white h-6 pt-0.5'>Best</p>
             <div className='flex flex-row justify-start items-start'>
             <p className='font-medium text-gray-600 pb-2'>Yearly Membership</p>
-            <p className='text-sm font-medium bg-gray-400 px-2 rounded w-12 text-center text-white h-6 ml-2 pt-0.5'>Best</p>
             </div>
             <p className='text-sm text-gray-800'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
             </div>

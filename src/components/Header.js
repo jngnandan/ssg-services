@@ -34,18 +34,18 @@ export default function Header() {
           </div>
 
           {navbarOpen?
-            <button onClick={() => setNavbarOpen(!navbarOpen)} className='flex flex-col justify-center items-center visible  md:invisible'>
+            <button onClick={() => setNavbarOpen(!navbarOpen)} className='flex flex-col justify-center items-center sm:block md:hidden'>
             <img src={menu} className='h-5' />
           </button>
           :
-          <button onClick={() => setNavbarOpen(!navbarOpen)} className='flex flex-col justify-center items-center visible  md:invisible'>
+          <button onClick={() => setNavbarOpen(!navbarOpen)} className='flex flex-col justify-center items-center sm:block md:hidden'>
             <img src={close} className='h-5' />
           </button>
           }
         </div>
 
         {!navbarOpen &&
-        <div className='px-6 font-medium text-sm pb-4 bg-red-700 display:none md:invisible visible'>
+        <div className='px-6 font-medium text-sm pb-4 bg-red-700'>
           <Link to='/security-services' onClick={() => setNavbarOpen(!navbarOpen)}>
                 <p className='py-3 text-white hover:text-black w-full'>Security Services</p>
             </Link>

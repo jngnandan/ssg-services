@@ -47,12 +47,12 @@ export default function SecurityServices() {
         </h1>
         <p className='text-sm text-gray-500 my-4 lg:w-120'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
         
-          <div className='mb-6 md:flex md:row'>
+          <div className='mb-6 flex flex-col justify-start items-start md:flex md:flex-row'>
           <Link to='#services'>
-          <button className='shadow w-40 rounded-md bg-red-700 hover:bg-red-900 text-white px-4 outline outline-2 font-medium text-sm h-10'>Our Services</button>
+          <button className='mb-3 shadow w-40 rounded-md bg-red-700 hover:bg-red-900 text-white px-4 outline outline-2 font-medium text-sm h-10'>Our Services</button>
           </Link>
           <Link to='#contactus'>
-          <button className='shadow w-40 ml-4 rounded-md outline outline-2 outline-offset-0 outline-red-700 hover:outline-red-400 text-red-700 hover:text-red-400 px-4 h-10 font-medium text-sm'>Contact Us</button>
+          <button className='shadow w-40 md:ml-4 rounded-md outline outline-2 outline-offset-0 outline-red-700 hover:outline-red-400 text-red-700 hover:text-red-400 px-4 h-10 font-medium text-sm'>Contact Us</button>
           </Link>
 
           </div>
@@ -73,21 +73,21 @@ export default function SecurityServices() {
       {/* Here's how SSG Security can benefit your business */}
       <div className='bg-red-700 px-6 md:px-16 lg:px-44 xl:px-60 py-10'>
         <h2 className='text-2xl text-white font-semibold'>Here's how SSG Security can benefit your business</h2>
-        <div className='grid grid-cols-3 gap-4 mt-4'>
-          <div className='bg-white p-4 rounded-md'>
-            <img src={sia} className='h-28 my-0' alt='Security' />
-            <hr className='border-sky-600 pb-3'/>
+        <div className='md:grid md:grid-cols-3 gap-2 mt-4'>
+          <div className='bg-white p-4 rounded-md mb-2'>
+            <img src={sia} className='h-14 md:h-28 my-0' alt='Security' />
+            <hr className='border-sky-60 pb-3'/>
             <p className='text-sm md:text-md font-medium text-sky-600 pb-2'>We are licensed SIA contractor</p>
             <p className='text-sm text-sky-600'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
           </div>
-          <div className='bg-red-800 p-4 rounded-md'>
-          <img src={established} className='h-20 my-4 md:pl-2' alt='Security' />
+          <div className='bg-red-800 p-4 rounded-md mb-2'>
+          <img src={established} className='h-10 md:h-20 my-4 md:pl-2' alt='Security' />
             <hr className='pb-3'/>
             <p className='text-sm md:text-md font-medium text-white pb-2'>We are licensed SIA contractor</p>
             <p className='text-sm text-white'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
           </div>
-          <div className='bg-red-800 p-4 rounded-md text-white'>
-          <img src={flexible} className='h-20 my-4 md:pl-2' alt='Security' />
+          <div className='bg-red-800 p-4 rounded-md text-white mb-2'>
+          <img src={flexible} className='h-10 md:h-20 my-4 md:pl-2' alt='Security' />
             <hr className='pb-3'/>
             <p className='text-sm md:text-md font-medium pb-2'>We are Flexible for all your security needs</p>
             <p className='text-sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
@@ -99,7 +99,7 @@ export default function SecurityServices() {
       <h2 className='text-2xl text-gray-800 font-semibold'>Our Services</h2>
           <hr className='border-gray-500 my-4 mb-6' />
 
-    <div className='grid-cols-2 grid md:grid-cols-3 gap-4'>
+    <div className='grid-cols-1 grid md:grid-cols-3 gap-4'>
         <div className='bg-white rounded-md shadow-md'>
             <img src={eventSecurity} className='h-auto w-full' alt='Security' />
             <div className='p-4 mb-4'>
