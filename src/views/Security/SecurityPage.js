@@ -16,23 +16,23 @@ export default function SecurityPage() {
     const {id} = useParams()
 
     const {security} = useContext(ServicesContext)
-    console.log(security)
+    // useMemo(() => {
+    //     const getPage = async () => {
+    //         const querySnapshot = await getDocs(collection(db, 'security'))
+    //         querySnapshot.docs.map(doc => doc.id === id && setPage(doc.data()))
+    //     }
+    //     getPage()
+    //     setLoading(false)
 
-    useMemo(() => {
-        const getPage = async () => {
-            const querySnapshot = await getDocs(collection(db, 'security'))
-            querySnapshot.docs.map(doc => doc.id === id && setPage(doc.data()))
-        }
-        getPage()
-        setLoading(false)
+    // })
+    const post = security.find(post => post.id === id)
 
-    })
-
-    const {content, title, img} = page
+    const {content, title, img} = post
 
   return (
     <>
-    {loading ?
+    {!loading ?
+    <div className="flex flex-col justify-center items-center h-80">
         <Oval
             height={80}
             width={80}
@@ -45,6 +45,7 @@ export default function SecurityPage() {
             strokeWidth={2}
             strokeWidthSecondary={2}
             />
+        </div>
     :
         <div className='px-6  lg:px-44 xl:px-60'>
     <Link to='/'>

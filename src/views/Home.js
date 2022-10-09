@@ -23,6 +23,13 @@ import g6 from '../../src/assets/images/g6.png'
 import g7 from '../../src/assets/images/g7.png'
 import g8 from '../../src/assets/images/g8.png'
 
+
+import cleaning from '../assets/images/cleaning.jpg'
+import boxing from '../assets/images/boxing.jpg'
+import boxer from '../assets/images/boxer.jpg'
+import personalised from '../assets/images/personalised.jpg'
+
+
 import o2 from '../../src/assets/icons/o2.svg'
 import alexander_palace from '../../src/assets/icons/alexander_palace.svg'
 import wembley from '../../src/assets/icons/wembley.svg'
@@ -30,6 +37,7 @@ import ap from '../../src/assets/icons/ap.svg'
 import gallow_glass from '../../src/assets/icons/gallow_glass.svg'
 import check from '../../src/assets/icons/check.svg'
 import { Input } from 'postcss'
+
 
 import { Link } from 'react-router-dom'
 import { useContext } from 'react'
@@ -48,10 +56,10 @@ export default function Home() {
   
         <div className='bg-white rounded-md shadow-md'>
         <Link to='/security-services'>
-            <img src={eventSecurity} className='h-auto w-full' alt='Security' />
+            <img src={ccvSurvilance} className='h-auto w-full' alt='Security' />
             <div className='p-4 mb-4 pb-7'>
             <p className='font-medium text-gray-600 pb-2'>Security Services</p>
-            <p className='text-sm text-gray-800'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <p className='text-sm text-gray-800 line-clamp-4'>Secure Security Guards (SSG) Ltd is SIA (Security Industry Authority) approved private security company for security guarding. Our business and our services meet the UK security industry’s current quality standards. .</p>
             </div>
           </Link>
           </div>
@@ -62,17 +70,17 @@ export default function Home() {
             <div className='p-4 pb-7'>
             <p className='text-sm bg-red-400 px-2 rounded w-12 text-center text-white my-1'>New</p>
             <p className='font-medium text-gray-600 pb-2'>Cleaning Security</p>
-            <p className='text-sm text-gray-800'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <p className='text-sm text-gray-800 line-clamp-4'>Our experienced cleaners and maids can efficiently clean any size home. Our domestic helpers are available throughout the day to give you as much flexibility as you need. Simply decide how many hours you need a cleaner for, that fits your requirement and budget and book accordingly..</p>
             </div>
             </Link>
           </div>
           <div className='bg-white rounded-md shadow-md'>
           <Link to='/boxing'>
-            <img src={ccvSurvilance} className='h-auto w-full' alt='Security' />
+            <img src={personalised} className='h-auto w-full rounded-t-md' alt='Security' />
             <div className='p-4 pb-7'>
             <p className='text-sm bg-red-400 px-2 rounded w-12 text-center text-white my-1'>New</p>
             <p className='font-medium text-gray-600 pb-2'>Boxing</p>
-            <p className='text-sm text-gray-800'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <p className='text-sm text-gray-800 line-clamp-4'>With expert coaches and a wide range of classes for both children and adults, we cater to all fitness levels.Working out together, feels good right? Take to the gym floor every day from 6pm - 8pm.</p>
             </div>
             </Link>
           </div>
