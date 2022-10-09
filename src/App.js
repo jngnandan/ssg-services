@@ -10,6 +10,7 @@ import CleaningServices from './views/CleaningServices'
 import Boxing from './views/Boxing'
 import SecurityServices from '../src/views/SecurityServices'
 import SecurityPage from './views/Security/SecurityPage';
+import CleaningPage from './views/Cleaning/CleaningPage';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path='/boxing' element={<Boxing />} />
           <Route path='/security-services' element={<SecurityServices />} />
           <Route path='/security-services/:id' element={<SecurityPage />} />
+          <Route path='/cleaning-services/:id' element={<CleaningPage />} />
 
         </Routes>
         <Footer />

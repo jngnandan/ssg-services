@@ -3,10 +3,11 @@ import {React} from 'react'
 import {Link} from 'react-router-dom'
 const CleaningSection = (props) => {
     const {post} = props
-    const {title, content, img} = post
+    const {title, content, img, id} = post
+    console.log(id)
     return(
         <>
-            <Link to={`/security-services/${post.id}`}>
+            <Link to={`/cleaning-services/${post.id}`}>
             <div className='bg-white rounded-md shadow-md pb-2'>
             <img className='rounded-t' src={img} />
             <div className='p-4'>

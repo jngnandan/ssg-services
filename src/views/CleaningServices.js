@@ -22,7 +22,7 @@ import g6 from '../../src/assets/images/g6.png'
 import g7 from '../../src/assets/images/g7.png'
 import g8 from '../../src/assets/images/g8.png'
 
-import cleaning from '../assets/images/cleaning.jpg'
+import cleaningS from '../assets/images/cleaningS.jpg'
 
 import o2 from '../../src/assets/icons/o2.svg'
 import alexander_palace from '../../src/assets/icons/alexander_palace.svg'
@@ -35,7 +35,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 import {Oval} from 'react-loader-spinner'
 import { ServicesContext } from '../context/ServicesContext'
 import SecuritySection from './Security/SecuritySection'
-
+import CleaningSection from './Cleaning/CleaningSection'
 export default function CleaningServices() {
   const {cleaning, loading} = useContext(ServicesContext)
 
@@ -57,7 +57,7 @@ export default function CleaningServices() {
             </div>
 
               {/* Image */}
-          <img src={cleaning} className='object-cover h-80 lg:h-96 w-full mt-1' />
+          <img src={cleaningS} className='object-cover h-80 lg:h-96 w-full mt-1' />
           {/* Second section */}
           <div className=''>
           <div className='px-6'>
@@ -110,62 +110,10 @@ export default function CleaningServices() {
             :
             <div className='grid-cols-1 grid md:grid-cols-3 gap-4'>
               {cleaning.map(post => 
-              <SecuritySection post={post} key={post.id} />)}
+              <CleaningSection post={post} key={post.id} />)}
 
             </div>
           }
-      </div>
-          {/* Our services */}
-          <div className='px-6 md:px-16 lg:px-44 xl:px-60 py-10 bg-gray-100'>
-      <h2 className='text-2xl text-gray-800 font-semibold'>Our Services</h2>
-          <hr className='border-gray-500 my-4 mb-6' />
-
-    <div className='grid md:grid-cols-3 gap-4'>
-        <div className='bg-white rounded-md shadow-md'>
-            <img src={eventSecurity} className='h-auto w-full' alt='Security' />
-            <div className='p-4 mb-4'>
-            <p className='font-medium text-gray-600 pb-2'>Domestic Cleaning</p>
-            <p className='text-sm text-gray-800'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-          </div>
-          <div className='bg-white rounded-md shadow-md'>
-            <img src={retailSecurity} className='h-auto w-full' alt='Security' />
-            <div className='p-4'>
-            <p className='font-medium text-gray-600 pb-2'>Office Cleaning</p>
-            <p className='text-sm text-gray-800'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-          </div>
-          <div className='bg-white rounded-md shadow-md'>
-            <img src={ccvSurvilance} className='h-auto w-full' alt='Security' />
-            <div className='p-4'>
-            <p className='font-medium text-gray-600 pb-2'>Carpet Cleaning</p>
-            <p className='text-sm text-gray-800'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-          </div>
-          <div className='bg-white rounded-md shadow-md'>
-            <img src={keyHolding} className='h-auto w-full' alt='Security' />
-            <div className='p-4'>
-            <p className='font-medium text-gray-600 pb-2'>Waste Removal</p>
-            <p className='text-sm text-gray-800'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-          </div>
-          <div className='bg-white rounded-md shadow-md'>
-            <img src={doorSupervision} className='h-auto w-full' alt='Security' />
-            <div className='p-4'>
-            <p className='font-medium text-gray-600 pb-2'>One Off Cleaning</p>
-            <p className='text-sm text-gray-800'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-          </div>
-          <div className='bg-white rounded-md shadow-md'>
-            <img src={mobilePatrol} className='h-auto w-full' alt='Security' />
-            <div className='p-4'>
-            <p className='font-medium text-gray-600 pb-2'>Oven Cleaning</p>
-            <p className='text-sm text-gray-800'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-            </div>
-          </div>
-          
-    </div>
-          
       </div>
 
       {/* Get in Touch with Us */}

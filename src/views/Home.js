@@ -24,7 +24,7 @@ import g7 from '../../src/assets/images/g7.png'
 import g8 from '../../src/assets/images/g8.png'
 
 
-import cleaning from '../assets/images/cleaning.jpg'
+import cleaningS from '../assets/images/cleaningS.jpg'
 import boxing from '../assets/images/boxing.jpg'
 import boxer from '../assets/images/boxer.jpg'
 import personalised from '../assets/images/personalised.jpg'

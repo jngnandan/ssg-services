@@ -15,7 +15,7 @@ export default function CleaningPage() {
     const [loading, setLoading] = useState(true)
     const {id} = useParams()
 
-    const {security} = useContext(ServicesContext)
+    const {cleaning} = useContext(ServicesContext)
     // useMemo(() => {
     //     const getPage = async () => {
     //         const querySnapshot = await getDocs(collection(db, 'security'))
@@ -25,7 +25,7 @@ export default function CleaningPage() {
     //     setLoading(false)
 
     // })
-    const post = security.find(post => post.id === id)
+    const post = cleaning.find(post => post.id === id)
 
     const {content, title, img} = post
 
