@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState, useContext, useMemo } from 'react'
 import sia from '../../src/assets/icons/sia-approved.svg'
 import flexible from '../assets/icons/flexible.svg'
 import established from '../../src/assets/icons/established.svg'
@@ -32,9 +32,13 @@ import gallow_glass from '../../src/assets/icons/gallow_glass.svg'
 import check from '../../src/assets/icons/check.svg'
 
 import { HashLink as Link } from 'react-router-hash-link';
-
+import {Oval} from 'react-loader-spinner'
+import { ServicesContext } from '../context/ServicesContext'
+import SecuritySection from './Security/SecuritySection'
 
 export default function CleaningServices() {
+  const {cleaning, loading} = useContext(ServicesContext)
+
   return (
     <div>
     {/* Cleaning */}
@@ -49,7 +53,7 @@ export default function CleaningServices() {
               
               </div>
               {/* text 2 */}
-              <p className='text-sm text-gray-500 my-4 lg:w-120'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
+              <p className='text-sm text-gray-500 my-4 lg:w-120'>Are you looking for a solution for your everyday cleaning hassles? Want to get our your mess and live peacefully ‍‍</p>
             </div>
 
               {/* Image */}
@@ -76,12 +80,41 @@ export default function CleaningServices() {
               </div>
               {/* text 2 */}
               <div>
-              <p className='text-sm text-gray-800 md:mt-2 lg:w-120 font-semibold'>Lorem ipsum dolor sit amet, consectetur adipectus and hrstuv</p>
-              <p className='text-sm text-gray-500 my-2 lg:w-120'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.ut labore et dolore magna aliqua. Ut enim ad minim veniam.ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+              <p className='text-sm text-gray-800 md:mt-2 lg:w-120 font-semibold'>We have the experience for your cleaning needs</p>
+              <p className='text-sm text-gray-500 my-2 lg:w-120'>Our experienced cleaners and maids can efficiently clean any size home. Our domestic helpers are available throughout the day to give you as much flexibility as you need. Simply decide how many hours you need a cleaner for, that fits your requirement and budget and book accordingly.
+</p>
               </div>
             </div>
           </div>
     </div>
+
+    {/* New Services */}
+    <div id='services' className='bg-gray-100 px-6 md:px-16 lg:px-44 xl:px-60 py-10'>
+      <h2 className='text-2xl text-gray-800 font-semibold'>New</h2>
+          <hr className='border-gray-500 my-4 mb-6' />
+          {loading ? 
+            <div className='flex flex-col justify-center items-center h-50'>
+              <Oval
+              height={80}
+              width={80}
+              color="red"
+              wrapperStyle={{}}
+              wrapperClass=""
+              visible={true}
+              ariaLabel='oval-loading'
+              secondaryColor="red"
+              strokeWidth={2}
+              strokeWidthSecondary={2}
+              />
+            </div>
+            :
+            <div className='grid-cols-1 grid md:grid-cols-3 gap-4'>
+              {cleaning.map(post => 
+              <SecuritySection post={post} key={post.id} />)}
+
+            </div>
+          }
+      </div>
           {/* Our services */}
           <div className='px-6 md:px-16 lg:px-44 xl:px-60 py-10 bg-gray-100'>
       <h2 className='text-2xl text-gray-800 font-semibold'>Our Services</h2>

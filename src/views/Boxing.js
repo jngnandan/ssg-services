@@ -89,7 +89,7 @@ export default function Boxing() {
             {/* Content */}
             <p className='text-xl pt-5 md:text-2xl md:text-md font-medium text-white pb-2 pl-4'>Learn Boxing in 30 days</p>
             <hr className='border-white pb-3'/>
-            <p className='text-sm text-white pl-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <p className='text-sm text-white pl-4'>Are you ready to challenge yourself and become a boxer and get fitness you always want, we have the 30 day plan to train you </p>
                     
             <div className='mb-6 flex flex-col md:flex md:flex-row pt-6 pl-4'>
             <button className='shadow mb-2 w-40 rounded-md bg-white hover:bg-red-400 text-transparant px-4 font-medium text-sm h-10'>Join Now</button>
@@ -110,12 +110,12 @@ export default function Boxing() {
     <div className='grid md:grid-cols-2 gap-4'>
         <div className='pr-2 md:pr-5 px-1 md:px-5 bg-white rounded-md shadow-md my-1 bg-cover flex flex-col justify-center h-52 items-start bg-center' style={{backgroundImage: `url(${boxing})`}}>
         <p className='text-md md:text-xl font-semibold text-white pl-4 pb-2'>Personalised Training</p>
-        <p className='text-sm text-white pl-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        <p className='text-sm text-white pl-4'>We give personalised training based on your fitness level and strength</p>
 
           </div>
           <div className='pr-2 md:pr-5 px-1 md:px-5 bg-white rounded-md shadow-md bg-cover flex flex-col justify-center h-52 items-start bg-center' style={{backgroundImage: `url(${boxer})`}}>
-        <p className='text-md md:text-xl font-semibold text-white pl-4 pb-2'>Individual <br /> Plan</p>
-        <p className='text-sm text-white pl-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        <p className='text-md md:text-xl font-semibold text-white pl-4 pb-2'>Individual Plan</p>
+        <p className='text-sm text-white pl-4'>We have the right mentor to give you the individual plan based on you wilingness.</p>
 
           </div>
     </div>
@@ -126,7 +126,8 @@ export default function Boxing() {
        <div className='bg-black px-6 md:px-16 lg:px-44 xl:px-60 py-10 grid md:grid-cols-2 gap-2'>
           <div className='pr-2'>
           <h2 className='text-2xl text-white font-semibold'>The Features</h2>
-          <p className='text-sm text-white pt-2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.consectetur adipiscing elit.</p>
+          <p className='text-sm text-white pt-2'>Our gym offers the best instructors in the city who are determined to help you reach your potential.
+</p>
           </div>
 
           <div className='pt-4'>
@@ -160,12 +161,12 @@ export default function Boxing() {
             <div className='p-4 mb-4'>
             <div>
             <p className='text-sm mb-1 font-medium bg-gray-400 rounded w-12 text-center text-white h-6 pt-0.5 invisible'></p>
-            <p className='font-medium text-gray-600 pb-2'>Yearly Membership</p>
-            <p className='text-sm text-gray-800'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <p className='font-medium text-gray-600 pb-2'>Pay as you go</p>
+            <p className='text-sm text-gray-800'>Try for class and learn as you go with your flexibility and freedom</p>
             </div>           
              <hr className='border-gray-500 my-4 mt-6' />
             
-              <p className='text-2xl text-gray-800 font-medium my-3'>£60 <span className='text-sm font-normal text-gray-800'>/ month</span></p>
+              <p className='text-2xl text-gray-800 font-medium my-3'>£5 <span className='text-sm font-normal text-gray-800'>/ session</span></p>
             <div className='flex flex-row'>
             <Link href='#contactus' className='flex flex-col justify-center items-center shadow w-full rounded-md outline outline-2 outline-offset-0 outline-gray-800 hover:outline-gray-800 text-gray-800 hover:text-black h-10 font-medium text-sm'>
             <button >Contact Us</button>
@@ -179,9 +180,9 @@ export default function Boxing() {
             <div>
             <p className='text-sm mb-1 font-medium bg-gray-400 rounded w-12 text-center text-white h-6 pt-0.5'>Best</p>
             <div className='flex flex-row justify-start items-start'>
-            <p className='font-medium text-gray-600 pb-2'>Yearly Membership</p>
+            <p className='font-medium text-gray-600 pb-2'>Monthly Membership</p>
             </div>
-            <p className='text-sm text-gray-800'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <p className='text-sm text-gray-800'>We provide structured monthly plan and training to become a good boxer</p>
             </div>
             
             <hr className='border-gray-500 my-4 mt-6' />
