@@ -35,10 +35,12 @@ import { HashLink as Link } from 'react-router-hash-link';
 import {useContext} from 'react'
 import {ServicesContext} from '../../src/context/ServicesContext.js'
 import SecuritySection from '../../src/views/Security/SecuritySection.js'
+import SecurityBlogSection from '../../src/views/Security/SecurityBlogSection.js'
+
 import {Oval} from 'react-loader-spinner'
 
 export default function SecurityServices() {
-  const {security, loading} = useContext(ServicesContext)
+  const {security, loading, securityBlogs} = useContext(ServicesContext)
   // console.log(security)
   return (
     <div>
@@ -100,7 +102,7 @@ export default function SecurityServices() {
       </div>
 {/* New Services */}
      <div id='services' className='bg-gray-100 px-6 md:px-16 lg:px-44 xl:px-60 py-10'>
-      <h2 className='text-2xl text-gray-800 font-semibold'>New</h2>
+      <h2 className='text-2xl text-gray-800 font-semibold'>Services</h2>
           <hr className='border-gray-500 my-4 mb-6' />
           {loading ? 
             <div className='flex flex-col justify-center items-center h-50'>
@@ -184,6 +186,35 @@ export default function SecurityServices() {
     </div>
           
       </div>
+
+            {/* Features Blogs */}
+<div id='services' className='px-6 md:px-16 lg:px-44 xl:px-60 py-10'>
+      <h2 className='text-2xl text-gray-800 font-semibold'>Featured Blogs</h2>
+          <hr className='border-gray-500 my-4 mb-6' />
+          {loading ? 
+            <div className='flex flex-col justify-center items-center h-50'>
+              <Oval
+              height={80}
+              width={80}
+              color="red"
+              wrapperStyle={{}}
+              wrapperClass=""
+              visible={true}
+              ariaLabel='oval-loading'
+              secondaryColor="red"
+              strokeWidth={2}
+              strokeWidthSecondary={2}
+              />
+            </div>
+            :
+            <div className='grid-cols-1 grid md:grid-cols-2 gap-4'>
+              {securityBlogs.filter((post, index) => index < 4).map(post => 
+              <SecurityBlogSection post={post} key={post.id} />)}
+
+            </div>
+          }
+      </div>
+
 
             {/* Get in Touch with Us */}
             <div id='contactus' className='bg-gray-100 px-6 md:px-16 lg:px-44 xl:px-60 py-10'>

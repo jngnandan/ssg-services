@@ -10,12 +10,12 @@ import {Oval} from 'react-loader-spinner'
 
 import { ServicesContext } from '../../context/ServicesContext'
 
-export default function SecurityPage() {
+export default function SecurityBlog() {
     const [page, setPage] = useState([])
     const [loading, setLoading] = useState(true)
     const {id} = useParams()
 
-    const {security} = useContext(ServicesContext)
+    const {securityBlogs} = useContext(ServicesContext)
     // useMemo(() => {
     //     const getPage = async () => {
     //         const querySnapshot = await getDocs(collection(db, 'security'))
@@ -25,9 +25,10 @@ export default function SecurityPage() {
     //     setLoading(false)
 
     // })
-    const post = security.find(post => post.id === id)
-
+    const post = securityBlogs.find(post => post.id === id)
     const {content, title, img} = post
+
+    console.log(post)
 
   return (
     <>
@@ -54,7 +55,7 @@ export default function SecurityPage() {
         <p className='pl-2 font-semibold text-gray-600 pb-0.5'>Security Services</p>
     </button>
     </Link>
-    <img className='' src={img} alt={title} />
+    {/* <img className='' src={img} alt={title} /> */}
     <h1 className='py-5 text-xl md:text-3xl font-semibold text-gray-800'>{title}</h1>
       <p className='text-gray-500'>{content}</p>
     </div>    

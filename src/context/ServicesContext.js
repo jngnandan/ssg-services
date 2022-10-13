@@ -9,6 +9,7 @@ const ServicesContext = createContext()
 const ServicesContextProvider = ({children}) => {
     const [security, setSecurity] = useState('cool')
     const [cleaning, setCleaning] = useState('cool')
+    const [securityBlogs, setSecurityBlogs] = useState([])
 
     const [loading, setLoading] = useState(true)
 
@@ -40,8 +41,23 @@ const ServicesContextProvider = ({children}) => {
         cleaningServices()
     }, [])
 
+    useEffect(() => {
+        const securityBlogs = async () => {
+            const blogCollectionRef = collection(db, 'blogSecurity')
+            setSecurityBlogs(await getDocs(blogCollectionRef).then(res => {
+                const blogSec = res.docs.map(doc => {
+                    return {...doc.data(), id: doc.id}
+                })
+                setLoading(false)
+                return blogSec
+            }))
+        }
+        securityBlogs()
+    }, [])
+
+
     return(
-        <ServicesContext.Provider value={{security, loading, cleaning}}>
+        <ServicesContext.Provider value={{security, loading, cleaning, securityBlogs}}>
             {children}
         </ServicesContext.Provider>
     )

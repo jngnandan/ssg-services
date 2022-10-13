@@ -12,6 +12,8 @@ import SecurityServices from '../src/views/SecurityServices'
 import SecurityPage from './views/Security/SecurityPage';
 import CleaningPage from './views/Cleaning/CleaningPage';
 
+import SecurityBlog from './views/Security/SecurityBlog';
+
 import ReactGA from "react-ga";
 const TRACKING_ID = "G-YFR289R318"; // OUR_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
@@ -29,6 +31,8 @@ function App() {
           <Route path='/boxing' element={<Boxing />} />
           <Route path='/security-services' element={<SecurityServices />} />
           <Route path='/security-services/:id' element={<SecurityPage />} />
+          <Route path='/security-services/blog/:id' element={<SecurityBlog />} />
+
           <Route path='/cleaning-services/:id' element={<CleaningPage />} />
 
         </Routes>
