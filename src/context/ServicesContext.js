@@ -42,7 +42,7 @@ const ServicesContextProvider = ({children}) => {
     }, [])
 
     useEffect(() => {
-        const securityBlogs = async () => {
+        const getSecurityBlogs = async () => {
             const blogCollectionRef = collection(db, 'blogSecurity')
             setSecurityBlogs(await getDocs(blogCollectionRef).then(res => {
                 const blogSec = res.docs.map(doc => {
@@ -52,7 +52,7 @@ const ServicesContextProvider = ({children}) => {
                 return blogSec
             }))
         }
-        securityBlogs()
+        getSecurityBlogs()
     }, [])
 
 

@@ -16,19 +16,23 @@ export default function SecurityBlog() {
     const {id} = useParams()
 
     const {securityBlogs} = useContext(ServicesContext)
-    // useMemo(() => {
-    //     const getPage = async () => {
-    //         const querySnapshot = await getDocs(collection(db, 'security'))
-    //         querySnapshot.docs.map(doc => doc.id === id && setPage(doc.data()))
-    //     }
-    //     getPage()
-    //     setLoading(false)
 
-    // })
     const post = securityBlogs.find(post => post.id === id)
+    
+    useEffect(() => {
+        if (!post){
+          const newPost = async () => {
+            const querySnapshot = await getDocs(collection(db, 'security'))
+            querySnapshot.docs.map(doc => doc.id === id && setPage(doc.data()))
+        }
+        newPost()
+        setLoading(false)
+        }
+    }, [])
+
     const {content, title, img} = post
 
-    console.log(post)
+    console.log(page)
 
   return (
     <>

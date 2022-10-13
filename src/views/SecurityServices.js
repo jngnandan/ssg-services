@@ -51,7 +51,7 @@ export default function SecurityServices() {
         <h1 className='text-xl md:text-3xl font-semibold text-gray-800'>
             We Solve your Security Needs
         </h1>
-        <p className='text-sm text-gray-500 my-4 lg:w-120'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+        <p className='text-sm text-gray-500 my-4 lg:w-120'>We are a leading security company that provides personal and corporate security officers. Our officers are reliable, trustworthy and professional. They provide 24-hour protection to our clients.</p>
         
           <div className='mb-6 flex flex-col justify-start items-start md:flex md:flex-row'>
           <Link to='#services'>
