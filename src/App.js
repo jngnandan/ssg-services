@@ -13,7 +13,7 @@ import SecurityPage from './views/Security/SecurityPage';
 import CleaningPage from './views/Cleaning/CleaningPage';
 
 import ReactGA from "react-ga";
-const TRACKING_ID = "G-NT3KK7MS47"; // OUR_TRACKING_ID
+const TRACKING_ID = "G-YFR289R318"; // OUR_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
 
