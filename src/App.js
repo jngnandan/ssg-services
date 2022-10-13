@@ -12,6 +12,11 @@ import SecurityServices from '../src/views/SecurityServices'
 import SecurityPage from './views/Security/SecurityPage';
 import CleaningPage from './views/Cleaning/CleaningPage';
 
+import ReactGA from "react-ga";
+const TRACKING_ID = "G-NT3KK7MS47"; // OUR_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
+
+
 function App() {
   return (
     <div className='h-screen mb-auto'>
