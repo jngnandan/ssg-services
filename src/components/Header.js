@@ -25,9 +25,10 @@ export default function Header() {
             <Link to='/clearning-services'>
                 <p className='mx-2'>Cleaning Services</p>
             </Link>
-            <Link to='/boxing'>
+            <a href="www.knockoutzone.co.uk">
                 <p className='mx-2'>Boxing</p>
-            </Link>
+            </a>
+
             <Link to='/contactus'>
               <p className='mx-2'>Contact us</p>
             </Link>
@@ -52,9 +53,10 @@ export default function Header() {
             <Link to='/clearning-services' onClick={() => setNavbarOpen(!navbarOpen)}>
                 <p className='py-3 text-white hover:text-black w-full'>Cleaning Services</p>
             </Link>
-            <Link to='/boxing' onClick={() => setNavbarOpen(!navbarOpen)}>
+            <a href="https://www.knockoutzone.co.uk/" onClick={() => setNavbarOpen(!navbarOpen)}>
                 <p className='py-3 text-white hover:text-black w-full'>Boxing</p>
-            </Link>
+            </a>
+
             <Link to='/contactus' onClick={() => setNavbarOpen(!navbarOpen)}>
               <p className='py-3 text-white hover:text-black w-full'>Contact us</p>
             </Link>
