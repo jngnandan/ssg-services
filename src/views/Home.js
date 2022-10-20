@@ -80,7 +80,7 @@ export default function Home() {
             <img src={personalised} className='h-auto w-full rounded-t-md' alt='Security' />
             <div className='p-4 pb-7'>
             <p className='text-sm bg-red-400 px-2 rounded w-12 text-center text-white my-1'>New</p>
-            <p className='font-medium text-gray-600 pb-2'>Boxing</p>
+            <p className='font-medium text-gray-600 pb-2'>Knockout Zone</p>
             <p className='text-sm text-gray-800 line-clamp-4'>With expert coaches and a wide range of classes for both children and adults, we cater to all fitness levels.Working out together, feels good right? Take to the gym floor every day from 6pm - 8pm.</p>
             </div>
             </a>
