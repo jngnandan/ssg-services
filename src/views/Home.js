@@ -23,6 +23,7 @@ import g6 from '../../src/assets/images/g6.png'
 import g7 from '../../src/assets/images/g7.png'
 import g8 from '../../src/assets/images/g8.png'
 
+import ssgcleaning from '../assets/images/ssgcleaning.jpg'
 
 import cleaningS from '../assets/images/cleaningS.jpg'
 import boxing from '../assets/images/boxing.jpg'
@@ -66,7 +67,7 @@ export default function Home() {
 
           <div className='bg-white rounded-md shadow-md'>
           <Link to='/clearning-services'>
-            <img src={retailSecurity} className='h-auto w-full' alt='Security' />
+            <img src={ssgcleaning} className='h-auto w-full rounded-t-md' alt='Security' />
             <div className='p-4 pb-7'>
             <p className='text-sm bg-red-400 px-2 rounded w-12 text-center text-white my-1'>New</p>
             <p className='font-medium text-gray-600 pb-2'>Cleaning Security</p>
