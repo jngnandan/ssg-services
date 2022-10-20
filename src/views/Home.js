@@ -38,7 +38,7 @@ import ap from '../../src/assets/icons/ap.svg'
 import gallow_glass from '../../src/assets/icons/gallow_glass.svg'
 import check from '../../src/assets/icons/check.svg'
 import { Input } from 'postcss'
-
+import knockoutzone from '../../src/assets/icons/knockoutzone.svg'
 
 import { Link } from 'react-router-dom'
 import { useContext } from 'react'
