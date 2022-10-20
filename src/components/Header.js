@@ -14,7 +14,7 @@ export default function Header() {
         <div className='shadow flex flex-row justify-between items-center h-16 px-6  lg:px-44 xl:px-60 font-medium text-sm'>
           <div className='' onClick={() => setNavbarOpen(true)}>
           <Link to='/'>
-            <img src={ssglogo} className='w-24 h-24' />
+            <img src={ssglogo} className='md:w-20 md:h-20 w-32' />
           </Link>
           </div>
 
