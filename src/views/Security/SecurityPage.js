@@ -54,7 +54,7 @@ export default function SecurityPage() {
         <p className='pl-2 font-semibold text-gray-600 pb-0.5'>Security Services</p>
     </button>
     </Link>
-    <img className='' src={img} alt={title} />
+    <img className='' src={img} alt={title} className="w-screen" />
     <h1 className='py-5 text-xl md:text-3xl font-semibold text-gray-800'>{title}</h1>
       <p className='text-gray-500'>{content}</p>
     </div>    

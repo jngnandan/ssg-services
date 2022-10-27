@@ -1,5 +1,6 @@
 
 import React from 'react'
+
 import sia from '../../src/assets/icons/sia-approved.svg'
 import flexible from '../assets/icons/flexible.svg'
 import established from '../../src/assets/icons/established.svg'
@@ -41,7 +42,39 @@ import {Oval} from 'react-loader-spinner'
 
 export default function SecurityServices() {
   const {security, loading, securityBlogs} = useContext(ServicesContext)
-  // console.log(security)
+
+  const [name, setName] = React.useState('')
+  const [email, setEmail] = React.useState('')
+  const [subject, setSubject] = React.useState('')
+  const [message, setMessage] = React.useState('')
+  const [error, setError] = React.useState('')
+
+
+// code fragmen
+// var data = {
+//     service_id: 'service_rqzzguo',
+//     template_id: 'template_p5p2ane',
+//     user_id: '6qtu4UTVm9c4kMSeW',
+//     template_params: {
+//         'name': name,
+//         'email': email,
+//         'subject': subject,
+//         'message': message
+//     }
+// };
+ 
+// $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+//     type: 'POST',
+//     data: JSON.stringify(data),
+//     contentType: 'application/json'
+// }).done(function() {
+//     alert('Your mail is sent!');
+// }).fail(function(error) {
+//     alert('Oops... ' + JSON.stringify(error));
+// });
+// code fragment
+
+
   return (
     <div>
         {/* Header */}
@@ -227,22 +260,24 @@ export default function SecurityServices() {
           
         <form className='grid grid-cols-2 gap-4' type='submit'>
             <label className='flex flex-col font-medium text-sm text-gray-800'>
-              First Name:
-              <input className='mt-1 h-8 px-4 py-1 bg-transparent rounded outline outline-2 outline-offset-0 outline-red-700 focus:outline-red-400' type="text" name="name" />
-            </label>
-            <label className='flex flex-col font-medium text-sm text-gray-800'>
-              Last Name:
-              <input className='mt-1 h-8 px-4 py-1 bg-transparent rounded outline outline-2 outline-offset-0 outline-red-700 focus:outline-red-400' type="text" name="name" />
+              Name:
+              <input onChange={(e) => setName(e.target.value)} className='mt-1 h-8 px-4 py-1 bg-transparent rounded outline outline-2 outline-offset-0 outline-red-700 focus:outline-red-400' type="text" name="name" />
             </label>
             <label className='flex flex-col font-medium text-sm text-gray-800'>
               Email:
-              <input className='mt-1 h-8 px-4 py-1 bg-transparent rounded outline outline-2 outline-offset-0 outline-red-700 focus:outline-red-400' type="email" name="email" />
+              <input onChange={(e) => setEmail(e.target.value)} className='mt-1 h-8 px-4 py-1 bg-transparent rounded outline outline-2 outline-offset-0 outline-red-700 focus:outline-red-400' type="email" name="email" />
             </label>
             <label className='flex flex-col font-medium text-sm text-gray-800'>
-              Service Interested:
-              <input className='mt-1 h-8 px-4 py-1 bg-transparent rounded outline outline-2 outline-offset-0 outline-red-700 focus:outline-red-400' type="text" name="text" />
+              Subject:
+              <input onChange={(e) => setSubject(e.target.value)} className='mt-1 h-8 px-4 py-1 bg-transparent rounded outline outline-2 outline-offset-0 outline-red-700 focus:outline-red-400' type="text" name="subject" />
             </label>
+            <label className='flex flex-col font-medium text-sm text-gray-800'>
+              Message:
+              <textarea onChange={(e) => setMessage(e.target.value)} className='mt-1 h-24 px-4 py-1 bg-transparent rounded outline outline-2 outline-offset-0 outline-red-700 focus:outline-red-400' name="message" />
+            </label>
+            <div className="flex flex-row justify-end col-span-2">
             <button className='mt-3 shadow w-40 rounded-md bg-red-700 hover:bg-red-900 text-white px-4 font-medium text-sm h-10'>Submit</button>
+            </div>
 
         </form>
       </div>
