@@ -1,6 +1,8 @@
 
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import ssgcleaning from '../assets/images/ssgcleaning.jpg'
+import personalised from '../assets/images/personalised.jpg'
 
 import sia from '../../src/assets/icons/sia-approved.svg'
 import flexible from '../assets/icons/flexible.svg'
@@ -283,7 +285,42 @@ export default function SecurityServices() {
             </div>}
 
       </div>
-        
+
+      {/* Extra Sections */}
+      <div>
+            {/* Our services */}
+            <div className='bg-black px-6 lg:px-44 xl:px-60 py-8 h-fill pb-16'>
+      <h2 className='text-2xl text-gray-100 font-semibold'>Our New Services</h2>
+          <hr className='border-gray-500 my-4 mb-6' />
+
+    <div className='grid grid-cols-2 gap-4 pt-2'>
+  
+
+          <div className='bg-white rounded-md shadow-md'>
+          <Link to='/clearning-services'>
+            <img src={ssgcleaning} className='h-auto w-full rounded-t-md' alt='Security' />
+            <div className='p-4 pb-7'>
+            <p className='text-sm bg-red-400 px-2 rounded w-12 text-center text-white my-1'>New</p>
+            <p className='font-medium text-gray-600 pb-2'>Cleaning Security</p>
+            <p className='text-sm text-gray-800 line-clamp-3'>Our experienced cleaners and maids can efficiently clean any size home. Our domestic helpers are available throughout the day to give you as much flexibility as you need. Simply decide how many hours you need a cleaner for, that fits your requirement and budget and book accordingly..</p>
+            </div>
+            </Link>
+          </div>
+          <div className='bg-white rounded-md shadow-md'>
+          <a href='https://knockoutzone.co.uk/'>
+            <img src={personalised} className='h-auto w-full rounded-t-md' alt='Security' />
+            <div className='p-4 pb-7'>
+            <p className='text-sm bg-red-400 px-2 rounded w-12 text-center text-white my-1'>New</p>
+            <p className='font-medium text-gray-600 pb-2'>Knockout Zone</p>
+            <p className='text-sm text-gray-800 line-clamp-3'>With expert coaches and a wide range of classes for both children and adults, we cater to all fitness levels.Working out together, feels good right? Take to the gym floor every day from 6pm - 8pm.</p>
+            </div>
+            </a>
+          </div>
+    </div>
+          
+      </div>
+
+    </div> 
     </div>
   )
 }

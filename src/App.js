@@ -25,11 +25,11 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path='/' element={<Home />} />
+          {/* <Route path='/' element={<Home />} /> */}
           <Route path='/clearning-services' element={<CleaningServices />} />
           <Route path='/contactus' element={<ContactUs />} />
           <Route path='/boxing' element={<Boxing />} />
-          <Route path='/security-services' element={<SecurityServices />} />
+          <Route path='/' element={<SecurityServices />} />
           <Route path='/security-services/:id' element={<SecurityPage />} />
           <Route path='/security-services/blog/:id' element={<SecurityBlog />} />
 
