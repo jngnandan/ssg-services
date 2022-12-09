@@ -75,22 +75,27 @@ export default function SecurityServices() {
         {/* Text */}
         <div className='pr-6'>
         <h1 className='text-xl md:text-3xl font-semibold text-gray-800'>
-            We Solve your Security Needs
+            We provide Immediate Security for your business needs
         </h1>
-        <p className='text-sm text-gray-500 my-4 lg:w-120'>We are a leading security company that provides personal and corporate security officers. Our officers are reliable, trustworthy and professional. They provide 24-hour protection to our clients.</p>
-        
-          <div className='mb-6 flex flex-col justify-start items-start md:flex md:flex-row'>
-          <Link to='#services'>
-          <button className='mb-3 shadow w-40 rounded-md bg-red-700 hover:bg-red-900 text-white px-4 outline outline-2 font-medium text-sm h-10'>Our Services</button>
-          </Link>
-          <Link to='#contactus'>
-          <button className='shadow w-40 md:ml-4 rounded-md outline outline-2 outline-offset-0 outline-red-700 hover:outline-red-400 text-red-700 hover:text-red-400 px-4 h-10 font-medium text-sm'>Contact Us</button>
-          </Link>
-
-          </div>
+        <p className='text-sm text-gray-600 my-4 lg:w-120'>We provide services for both residential and commercial properties, as well as for special events. We work with both small and large businesses to help them design customized security plans that suit their needs.
+        </p>
+        <form ref={form} onSubmit={sendEmail} className='grid grid-row-3 gap-4 items-center pb-3' type='submit'>
+            <label className='flex flex-col font-medium text-sm text-gray-800'>
+              <input placeholder='Name' className='mt-1 h-8 px-4 py-1 bg-transparent rounded outline outline-2 outline-offset-0 outline-red-700 focus:outline-red-400' type="text" name="name" />
+            </label>
+            <label className='flex flex-col font-medium text-sm text-gray-800'>
+              <input placeholder='Email' className='mt-1 h-8 px-4 py-1 bg-transparent rounded outline outline-2 outline-offset-0 outline-red-700 focus:outline-red-400' type="email" name="email" />
+            </label>
+            <label className='flex flex-col font-medium text-sm text-gray-800'>
+              <button className='mt-1 mb-3 shadow w-40 rounded-md bg-red-700 hover:bg-red-900 text-white px-4 font-medium text-sm h-10'>Subscribe</button>
+            </label>
+        </form>
         </div>
         {/* Image */}
         <img src={header} className='mb-6 h-auto w-full md:h-56 lg:h-80' alt='Security Needs' />
+     
+        
+     
       </div>
          {/* Companies */} 
       <div className='grid grid-cols-5 gap-2 items-center px-6 md:px-16 lg:px-44 xl:120 my-4'>
@@ -104,25 +109,25 @@ export default function SecurityServices() {
 
       {/* Here's how SSG Security can benefit your business */}
       <div className='bg-red-700 px-6 md:px-16 lg:px-44 xl:px-60 py-10'>
-        <h2 className='text-2xl text-white font-semibold'>Here's how SSG Security can benefit your business</h2>
+        <h2 className='text-2xl text-white font-semibold'>Benefits with SSG Security</h2>
         <div className='md:grid md:grid-cols-3 gap-2 mt-4'>
           <div className='bg-white p-4 rounded-md mb-2'>
             <img src={sia} className='h-14 md:h-28 my-0' alt='Security' />
             <hr className='border-sky-60 pb-3'/>
-            <p className='text-sm md:text-md font-medium text-sky-600 pb-2'>We are licensed SIA contractor</p>
-            <p className='text-sm text-sky-600'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <p className='text-sm md:text-md font-medium text-sky-600 pb-2'>We are an SIA ACS approved contractor</p>
+            <p className='text-sm text-gray-600 line-clamp-7'>We are an established company with over 7 years of experience in the security industry. We are licensed, bonded, and insured, so you can be assured that we will do everything we can to protect your property or event.</p>
           </div>
           <div className='bg-red-800 p-4 rounded-md mb-2'>
           <img src={established} className='h-10 md:h-20 my-4 md:pl-2' alt='Security' />
             <hr className='pb-3'/>
-            <p className='text-sm md:text-md font-medium text-white pb-2'>We are licensed SIA contractor</p>
-            <p className='text-sm text-white'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <p className='text-sm md:text-md font-medium text-white pb-2'>Comprehensive security services, at competitive prices.</p>
+            <p className='text-sm text-gray-200 line-clamp-7'>We are a company that offers full range of security services and we also provide 24/7 monitoring services at all times from pubs, clubs and corporate security to and key holding, Mobile Patrol and CCTV Survilence </p>
           </div>
           <div className='bg-red-800 p-4 rounded-md text-white mb-2'>
           <img src={flexible} className='h-10 md:h-20 my-4 md:pl-2' alt='Security' />
             <hr className='pb-3'/>
-            <p className='text-sm md:text-md font-medium pb-2'>We are Flexible for all your security needs</p>
-            <p className='text-sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <p className='text-sm md:text-md font-medium pb-2'>Flexible and immediately available to business needs</p>
+            <p className='text-sm line-clamp-7 text-gray-200'>We are proud to be able to offer flexibility in security guarding services. We understand how important it is for clients to have someone who can adapt to any situation, we are prepared for anything.</p>
           </div>
         </div>
       </div>
@@ -162,21 +167,17 @@ export default function SecurityServices() {
           <div>
             <h3 className='text-white text-xl font-semibold'>Best in class Security</h3>
               <div>
-              <p className='text-sm text-white pt-2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                <div className='flex flex-row items-center justify-start'>
-                <img src={check} className='h-auto' alt='uk' />
-                <p className='text-sm text-white p-2'>Lorem ipsum dolor sit amet, consectetur adipiscing </p>
-                </div>
-                <div className='flex flex-row items-center justify-start'>
-                <img src={check} className='h-auto' alt='check' />
-                <p className='text-sm text-white p-2'>Lorem ipsum dolor sit amet, consectetur adipiscing </p>
-                </div>
-                <div className='flex flex-row items-center justify-start'>
-                <img src={check} className='h-auto' alt='uk' />
-                <p className='text-sm text-white p-2'>Lorem ipsum dolor sit amet, consectetur adipiscing </p>
-                </div> 
+              <p className='text-sm text-white pt-2'>We cover security guarding services across UK. We have a team of highly trained and experienced professionals who have been providing security guard services to organisations for more than 7 years now.</p>
+               
               </div>
           </div>
+      </div>
+      
+      <div>
+      {/* <!-- Calendly inline widget begin --> */}
+{/* <div className="calendly-inline-widget" data-url="https://calendly.com/ssgsecurity/15mins" style="min-width:320px;height:630px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script> */}
+{/* <!-- Calendly inline widget end --> */}
       </div>
 
       {/* Gallery */}
