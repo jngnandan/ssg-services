@@ -1,5 +1,8 @@
 
 import React, { useRef } from 'react';
+import { PopupButton, InlineWidget, PopupModal } from "react-calendly";
+
+
 import emailjs from '@emailjs/browser';
 import ssgcleaning from '../assets/images/ssgcleaning.jpg'
 import personalised from '../assets/images/personalised.jpg'
@@ -171,14 +174,30 @@ export default function SecurityServices() {
                
               </div>
           </div>
+        
+          <PopupButton 
+        url="https://calendly.com/ssgsecurity/15mins"
+        /*
+         * react-calendly uses React's Portal feature (https://reactjs.org/docs/portals.html) to render the popup modal. As a result, you'll need to
+         * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
+         */
+        rootElement={document     .getElementById("root")}
+        text="Click here to schedule a booking"
+        textColor="#fffff"                                                                                         
+        color="#00b8d4"
+        buttonStyle={{
+          backgroundColor: '#00b8d4'
+        }}
+      />
+      <InlineWidget url="https://calendly.com/ssgsecurity/15mins" />
+
+      
       </div>
       
       <div>
-      {/* <!-- Calendly inline widget begin --> */}
-{/* <div className="calendly-inline-widget" data-url="https://calendly.com/ssgsecurity/15mins" style="min-width:320px;height:630px;"></div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script> */}
-{/* <!-- Calendly inline widget end --> */}
+
       </div>
+
 
       {/* Gallery */}
       <div className='bg-gray-100 '>
