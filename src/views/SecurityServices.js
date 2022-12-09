@@ -48,20 +48,39 @@ import {Oval} from 'react-loader-spinner'
 
 import {FaRegCheckCircle} from 'react-icons/fa'
 import {FaRegTimesCircle} from 'react-icons/fa'
+import { useState } from 'react';
+import {RiCheckboxCircleFill} from 'react-icons/ri'
 
 export default function SecurityServices() {
   const {security, loading, securityBlogs} = useContext(ServicesContext)
   const [error, setError] = React.useState('')
+  const [success, setSuccess] = useState(false)
+  const [subscribe, setSubscribe] = useState(false)
 
     const form = useRef();
 
     const sendEmail = (e) => {
     e.preventDefault();
-
+        setSuccess('loading')
     emailjs.sendForm('service_rqzzguo', 'template_p5p2ane', form.current, '6qtu4UTVm9c4kMSeW')
       .then((result) => {
           // console.log(result.text);
           setError(result.text)
+          setSuccess(true)
+      }, (error) => {
+          console.log(error.text);
+          setError('ERROR')
+      });
+  };
+
+  const sendSubscribe = (e) => {
+    e.preventDefault();
+        setSubscribe('loading')
+    emailjs.sendForm('service_bc98gyb', 'template_p5p2ane', form.current, '6qtu4UTVm9c4kMSeW')
+      .then((result) => {
+          // console.log(result.text);
+          setError(result.text)
+          setSubscribe(true)
       }, (error) => {
           console.log(error.text);
           setError('ERROR')
@@ -82,7 +101,7 @@ export default function SecurityServices() {
         </h1>
         <p className='text-sm text-gray-600 my-4 lg:w-120'>We provide services for both residential and commercial properties, as well as for special events. We work with both small and large businesses to help them design customized security plans that suit their needs.
         </p>
-        <form ref={form} onSubmit={sendEmail} className='grid grid-row-3 gap-4 items-center pb-3' type='submit'>
+        <form ref={form} onSubmit={sendSubscribe} className='grid grid-row-3 gap-4 items-center pb-3' type='submit'>
             <label className='flex flex-col font-medium text-sm text-gray-800'>
               <input placeholder='Name' className='mt-1 h-8 px-4 py-1 bg-transparent rounded outline outline-2 outline-offset-0 outline-red-700 focus:outline-red-400' type="text" name="name" />
             </label>
@@ -90,7 +109,36 @@ export default function SecurityServices() {
               <input placeholder='Email' className='mt-1 h-8 px-4 py-1 bg-transparent rounded outline outline-2 outline-offset-0 outline-red-700 focus:outline-red-400' type="email" name="email" />
             </label>
             <label className='flex flex-col font-medium text-sm text-gray-800'>
-              <button className='mt-1 mb-3 shadow w-40 rounded-md bg-red-700 hover:bg-red-900 text-white px-4 font-medium text-sm h-10'>Subscribe</button>
+           
+           
+           {success === false &&
+            <button className='mt-1 mb-3 shadow w-40 rounded-md bg-red-700 hover:bg-red-900 text-white px-4 font-medium text-sm h-10 flex flex-row justify-center items-center'>
+              Submit
+          </button>
+           }
+
+            {success === 'loading' &&
+              <button className='mt-1 mb-3 shadow w-40 rounded-md bg-red-700 hover:bg-red-900 text-white px-4 font-medium text-sm h-10 flex flex-row justify-center items-center'>
+              <Oval
+              height={28}
+              width={28}
+              color="#ffffff"
+              wrapperStyle={{}}
+              wrapperClass=""
+              visible={true}
+              ariaLabel='oval-loading'
+              secondaryColor="#ffffff"
+              strokeWidth={3}
+              strokeWidthSecondary={3}
+              />
+          </button>
+            }
+            {success === true &&
+              <button className='mt-1 mb-3 shadow w-40 rounded-md bg-red-700 hover:bg-red-900 text-white px-4 font-medium text-sm h-10 flex flex-row justify-center items-center'>
+              <RiCheckboxCircleFill className='mr-2 h-7 w-7' />
+          </button>
+            }
+
             </label>
         </form>
         </div>
@@ -275,7 +323,34 @@ export default function SecurityServices() {
               <textarea className='mt-1 h-24 px-4 py-1 bg-transparent rounded outline outline-2 outline-offset-0 outline-red-700 focus:outline-red-400' name="message" />
             </label>
             <div className="flex flex-row justify-end col-span-2">
-            <button className='mt-3 shadow w-40 rounded-md bg-red-700 hover:bg-red-900 text-white px-4 font-medium text-sm h-10'>Submit</button>
+           
+            {subscribe === false &&
+            <button className='mt-1 mb-3 shadow w-40 rounded-md bg-red-700 hover:bg-red-900 text-white px-4 font-medium text-sm h-10 flex flex-row justify-center items-center'>
+              Submit
+          </button>
+           }
+
+            {subscribe === 'loading' &&
+              <button className='mt-1 mb-3 shadow w-40 rounded-md bg-red-700 hover:bg-red-900 text-white px-4 font-medium text-sm h-10 flex flex-row justify-center items-center'>
+              <Oval
+              height={28}
+              width={28}
+              color="#ffffff"
+              wrapperStyle={{}}
+              wrapperClass=""
+              visible={true}
+              ariaLabel='oval-loading'
+              secondaryColor="#ffffff"
+              strokeWidth={3}
+              strokeWidthSecondary={3}
+              />
+          </button>
+            }
+            {subscribe === true &&
+              <button className='mt-1 mb-3 shadow w-40 rounded-md bg-red-700 hover:bg-red-900 text-white px-4 font-medium text-sm h-10 flex flex-row justify-center items-center'>
+              <RiCheckboxCircleFill className='mr-2 h-7 w-7' />
+          </button>
+            }
             </div>
         </form>
 

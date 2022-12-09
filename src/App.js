@@ -15,6 +15,7 @@ import CleaningPage from './views/Cleaning/CleaningPage';
 import SecurityBlog from './views/Security/SecurityBlog';
 
 import ReactGA from "react-ga";
+import Thanks from './views/Thanks';
 const TRACKING_ID = "G-YFR289R318"; // OUR_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
@@ -34,7 +35,7 @@ function App() {
           <Route path='/security-services/blog/:id' element={<SecurityBlog />} />
 
           <Route path='/cleaning-services/:id' element={<CleaningPage />} />
-
+          <Route path='/thanks' element={<Thanks />} />
         </Routes>
         <Footer />
       </BrowserRouter>
