@@ -174,27 +174,13 @@ export default function SecurityServices() {
                
               </div>
           </div>
-        
-          <PopupButton 
-        url="https://calendly.com/ssgsecurity/15mins"
-        /*
-         * react-calendly uses React's Portal feature (https://reactjs.org/docs/portals.html) to render the popup modal. As a result, you'll need to
-         * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
-         */
-        rootElement={document     .getElementById("root")}
-        text="Click here to schedule a booking"
-        textColor="#fffff"                                                                                         
-        color="#00b8d4"
-        buttonStyle={{
-          backgroundColor: '#00b8d4'
-        }}
-      />
-      <InlineWidget url="https://calendly.com/ssgsecurity/15mins" />
+      </div>
 
       
-      </div>
-      
-      <div>
+      <div className='bg-gray-100 px-6 md:px-16 lg:px-44 xl:px-60 py-10'>
+      <h2 className='text-2xl text-gray-800 font-semibold'>Book a meeting for your security needs</h2>
+      <hr className='border-gray-500 my-4 mb-6' />
+      <InlineWidget className='h-auto overflow:hidden' url="https://calendly.com/ssgsecurity/15mins" />
 
       </div>
 
