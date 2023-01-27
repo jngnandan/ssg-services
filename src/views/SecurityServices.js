@@ -149,13 +149,13 @@ export default function SecurityServices() {
      
       </div>
          {/* Companies */} 
-      <div className='grid grid-cols-5 gap-2 items-center px-6 md:px-16 lg:px-44 xl:120 my-4'>
+      {/* <div className='grid grid-cols-5 gap-2 items-center px-6 md:px-16 lg:px-44 xl:120 my-4'>
           <img src={o2} />
           <img src={wembley} />
           <img src={alexander_palace} />
           <img src={ap} />
           <img src={gallow_glass} />
-      </div>
+      </div> */}
 
 
       {/* Here's how SSG Security can benefit your business */}
@@ -183,7 +183,7 @@ export default function SecurityServices() {
         </div>
       </div>
 {/* New Services */}
-     <div id='services' className='bg-gray-100 px-6 md:px-16 lg:px-44 xl:px-60 py-10'>
+     <div id='security-services' className='bg-gray-100 px-6 md:px-16 lg:px-44 xl:px-60 py-10'>
       <h2 className='text-2xl text-gray-800 font-semibold'>Services</h2>
           <hr className='border-gray-500 my-4 mb-6' />
           {loading ? 
@@ -387,7 +387,7 @@ export default function SecurityServices() {
             </div>
             </Link>
           </div>
-          <div className='bg-white rounded-md shadow-md'>
+          {/* <div className='bg-white rounded-md shadow-md'>
           <a href='https://knockoutzone.co.uk/'>
             <img src={personalised} className='h-auto w-full rounded-t-md' alt='Security' />
             <div className='p-4 pb-7'>
@@ -396,7 +396,7 @@ export default function SecurityServices() {
             <p className='text-sm text-gray-800 line-clamp-3'>With expert coaches and a wide range of classes for both children and adults, we cater to all fitness levels.Working out together, feels good right? Take to the gym floor every day from 6pm - 8pm.</p>
             </div>
             </a>
-          </div>
+          </div> */}
     </div>
           
       </div>
