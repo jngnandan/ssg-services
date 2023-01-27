@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
+
 
 import menu from '../assets/icons/menu.svg'
 import close from '../assets/icons/close.svg'
@@ -19,15 +21,12 @@ export default function Header() {
           </div>
 
           <div className='flex flex-row m-5 invisible  md:visible'>
-            <Link to='/security-services'>
+            <HashLink to='/#security-services'>
                 <p className='mx-2'>Security Services</p>
-            </Link>
+            </HashLink>
             <Link to='/clearning-services'>
                 <p className='mx-2'>Cleaning Services</p>
             </Link>
-            <a href="www.knockoutzone.co.uk">
-                <p className='mx-2'>Boxing</p>
-            </a>
 
             <Link to='/contactus'>
               <p className='mx-2'>Contact us</p>
