@@ -302,6 +302,8 @@ export default function SecurityServices() {
       <div className="pl-2 mt-3 text-gray-800 font-medium">
       <p className="text-gray-800"><span className="mt-3">Landline:</span> 020 3900 2489</p>
       <p className="text-gray-800"><span className="mt-3">Email:</span> info@ssgsecurity.co.uk</p>
+      <p className="text-gray-800"><span className="mt-3">Address: </span>Jhumat House, 160 London Road, Barking IG11 8BB</p>
+
       </div>
           <hr className='border-gray-500 my-4 mb-6' />
           
@@ -370,11 +372,11 @@ export default function SecurityServices() {
       {/* Extra Sections */}
       <div>
             {/* Our services */}
-            <div className='bg-black px-6 lg:px-44 xl:px-60 py-8 h-fill pb-16'>
+            {/* <div className='bg-black px-6 lg:px-44 xl:px-60 py-8 h-fill pb-16'>
       <h2 className='text-2xl text-gray-100 font-semibold'>Our New Services</h2>
           <hr className='border-gray-500 my-4 mb-6' />
 
-    {/* <div className='grid grid-cols-2 gap-4 pt-2'>
+    <div className='grid grid-cols-2 gap-4 pt-2'>
   
 
           <div className='bg-white rounded-md shadow-md'>
@@ -397,9 +399,9 @@ export default function SecurityServices() {
             </div>
             </a>
           </div>
-    </div> */}
+    </div>
           
-      </div>
+      </div> */}
 
     </div> 
     </div>
