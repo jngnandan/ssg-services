@@ -48,10 +48,10 @@ export default function CleaningPage() {
         </div>
     :
         <div className='px-6  lg:px-44 xl:px-60'>
-    <Link to='/'>
+    <Link to='/cleaning-services'>
     <button className='h-12 flex flex-row justify-start items-center'>
         <img src={back} className='y-3' alt=''/>
-        <p className='pl-2 font-semibold text-gray-600 pb-0.5'>Security Services</p>
+        <p className='pl-2 font-semibold text-gray-600 pb-0.5'>Cleaning Services</p>
     </button>
     </Link>
     <img className='' src={img} alt={title} />

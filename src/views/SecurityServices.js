@@ -374,7 +374,7 @@ export default function SecurityServices() {
       <h2 className='text-2xl text-gray-100 font-semibold'>Our New Services</h2>
           <hr className='border-gray-500 my-4 mb-6' />
 
-    <div className='grid grid-cols-2 gap-4 pt-2'>
+    {/* <div className='grid grid-cols-2 gap-4 pt-2'>
   
 
           <div className='bg-white rounded-md shadow-md'>
@@ -387,7 +387,7 @@ export default function SecurityServices() {
             </div>
             </Link>
           </div>
-          {/* <div className='bg-white rounded-md shadow-md'>
+          <div className='bg-white rounded-md shadow-md'>
           <a href='https://knockoutzone.co.uk/'>
             <img src={personalised} className='h-auto w-full rounded-t-md' alt='Security' />
             <div className='p-4 pb-7'>
@@ -396,8 +396,8 @@ export default function SecurityServices() {
             <p className='text-sm text-gray-800 line-clamp-3'>With expert coaches and a wide range of classes for both children and adults, we cater to all fitness levels.Working out together, feels good right? Take to the gym floor every day from 6pm - 8pm.</p>
             </div>
             </a>
-          </div> */}
-    </div>
+          </div>
+    </div> */}
           
       </div>
 
