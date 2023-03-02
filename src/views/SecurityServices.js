@@ -98,6 +98,7 @@ export default function SecurityServices() {
         <div className='pr-6'>
         <h1 className='text-xl md:text-3xl font-semibold text-gray-800'>
             We provide Immediate Security for your business needs
+        
         </h1>
         <p className='text-sm text-gray-600 my-4 lg:w-120'>We provide services for both residential and commercial properties, as well as for special events. We work with both small and large businesses to help them design customized security plans that suit their needs.
         </p>
