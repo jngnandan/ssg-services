@@ -13,6 +13,8 @@ import SecurityPage from './views/Security/SecurityPage';
 import CleaningPage from './views/Cleaning/CleaningPage';
 
 import SecurityBlog from './views/Security/SecurityBlog';
+import Policies from './views/Policies';
+
 
 import ReactGA from "react-ga";
 import Thanks from './views/Thanks';
@@ -43,6 +45,7 @@ function App() {
           />
           <Route path='/cleaning-services/:id' element={<CleaningPage />} />
           <Route path='/thanks' element={<Thanks />} />
+          <Route path='/policies' element={<Policies />} />
         </Routes>
         <Footer />
       </BrowserRouter>
