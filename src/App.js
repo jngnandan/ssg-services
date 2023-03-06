@@ -19,6 +19,7 @@ import Policies from './views/Policies';
 import ReactGA from "react-ga";
 import Thanks from './views/Thanks';
 import { useEffect } from 'react';
+import ViewPolicy from './views/ViewPolicy';
 const TRACKING_ID = "G-YFR289R318"; // OUR_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
 
@@ -46,6 +47,7 @@ function App() {
           <Route path='/cleaning-services/:id' element={<CleaningPage />} />
           <Route path='/thanks' element={<Thanks />} />
           <Route path='/policies' element={<Policies />} />
+          <Route path='/:id' element={<ViewPolicy />}/>
         </Routes>
         <Footer />
       </BrowserRouter>
