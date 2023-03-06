@@ -10,7 +10,7 @@ import personalised from '../assets/images/personalised.jpg'
 import sia from '../../src/assets/icons/sia-approved.svg'
 import flexible from '../assets/icons/flexible.svg'
 import established from '../../src/assets/icons/established.svg'
-import header from '../../src/assets/images/header.png'
+import header from '../../src/assets/images/header.jpg'
 import eventSecurity from '../../src/assets/images/event_security.png'
 import ccvSurvilance from '../../src/assets/images/cctv_survilance.png'
 import retailSecurity from '../../src/assets/images/retail_security.png'
@@ -144,7 +144,7 @@ export default function SecurityServices() {
         </form>
         </div>
         {/* Image */}
-        <img src={header} className='mb-6 h-auto w-full md:h-56 lg:h-80' alt='Security Needs' />
+        <img src={header} className='mb-6 w-full h-auto md:h-56 lg:h-80' alt='Security Needs' />
      
         
      
