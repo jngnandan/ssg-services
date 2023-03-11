@@ -302,6 +302,8 @@ export default function SecurityServices() {
       <h2 className='text-2xl text-gray-800 font-semibold'>Contact Us</h2>
       <div className="pl-2 mt-3 text-gray-800 font-medium">
       <p className="text-gray-800"><span className="mt-3">Landline:</span> 020 3900 2489</p>
+      <p className="text-gray-800"><span className="mt-3">Landline:</span> 08003688613</p>
+        
       <p className="text-gray-800"><span className="mt-3">Email:</span> info@ssgsecurity.co.uk</p>
       <p className="text-gray-800"><span className="mt-3">Address: </span>Jhumat House, 160 London Road, Barking IG11 8BB</p>
 
