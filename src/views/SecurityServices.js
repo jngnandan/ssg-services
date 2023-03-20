@@ -306,6 +306,7 @@ export default function SecurityServices() {
         
       <p className="text-gray-800"><span className="mt-3">Email:</span> info@ssgsecurity.co.uk</p>
       <p className="text-gray-800"><span className="mt-3">Address: </span>Jhumat House, 160 London Road, Barking IG11 8BB</p>
+      <p className="text-gray-800"><span className="mt-3">Fax Number: </span>02039001936</p>
 
       </div>
           <hr className='border-gray-500 my-4 mb-6' />
