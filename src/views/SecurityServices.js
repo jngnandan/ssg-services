@@ -1,6 +1,8 @@
 
 import React, { useRef } from 'react';
 import { PopupButton, InlineWidget, PopupModal } from "react-calendly";
+import Iframe from 'react-iframe'
+import ReactPlayer from "react-player"
 
 
 import emailjs from '@emailjs/browser';
@@ -144,9 +146,19 @@ export default function SecurityServices() {
         </form>
         </div>
         {/* Image */}
-        <img src={header} className='mb-6 w-full h-auto md:h-56 lg:h-80' alt='Security Needs' />
-     
-        
+        {/* <img src={header} className='mb-6 w-full h-auto md:h-56 lg:h-80' alt='Security Needs' /> */}
+        {/* <Iframe url="https://www.facebook.com/SSGSUK/videos/1522969701434907"
+        width="640px"
+        height="320px"
+        id=""
+        className=""
+        display="block"
+        position="relative"/> */}
+
+    <ReactPlayer
+        url="https://www.facebook.com/SSGSUK/videos/1522969701434907"
+        controls
+      />       
      
       </div>
          {/* Companies */} 
