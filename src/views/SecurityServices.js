@@ -32,6 +32,7 @@ import g6 from '../../src/assets/images/g6.png'
 import g7 from '../../src/assets/images/g7.png'
 import g8 from '../../src/assets/images/g8.png'
 
+
 import o2 from '../../src/assets/icons/o2.svg'
 import alexander_palace from '../../src/assets/icons/alexander_palace.svg'
 import wembley from '../../src/assets/icons/wembley.svg'
@@ -39,7 +40,7 @@ import ap from '../../src/assets/icons/ap.svg'
 import gallow_glass from '../../src/assets/icons/gallow_glass.svg'
 import check from '../../src/assets/icons/check.svg'
 import { Input } from 'postcss'
-
+import video from '../../src/assets/documents/company.mp4'
 import { HashLink as Link } from 'react-router-hash-link';
 import {useContext} from 'react'
 import {ServicesContext} from '../../src/context/ServicesContext.js'
@@ -154,11 +155,20 @@ export default function SecurityServices() {
         className=""
         display="block"
         position="relative"/> */}
+      {/* <video autoplay="">
+        <source src={require('https://www.facebook.com/SSGSUK/videos/1522969701434907')}  />
+    </video> */}
+    {/* <ReactPlayer
+        url="https://youtu.be/V7knPMQPuMY"
+        controls autoplay
+      />     */}
+   
 
-    <ReactPlayer
-        url="https://www.facebook.com/SSGSUK/videos/1522969701434907"
-        controls
-      />       
+    {/* <iframe src='https://youtu.be/V7knPMQPuMY'
+        allow='autoplay; encrypted-media'
+        allowFullScreen
+        title='video' */}
+
      
       </div>
          {/* Companies */} 
