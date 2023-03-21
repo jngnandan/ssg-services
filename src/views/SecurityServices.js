@@ -163,7 +163,7 @@ export default function SecurityServices() {
         controls autoplay
       />     */}
    
-   <video autoPlay muted src= {video} />
+   <video autoPlay loop playsInline controls muted src= {video} />
 
 
     {/* <iframe src='https://youtu.be/V7knPMQPuMY'
