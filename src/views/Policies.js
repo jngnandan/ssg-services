@@ -55,9 +55,10 @@ const Policies = () => {
         <div className="hover:text-gray-500 flex flex-row items-center">
         <AiOutlineFilePdf />
         <a className="" href={wasteManagement} target="_blank">Waste management Policy</a>
+        </div>
         <div className="hover:text-gray-500 flex flex-row items-center">
         <AiOutlineFilePdf />
-        <a className="" href={safeguarding} target="_blank">safeguarding Policy</a>
+        <a className="" href={safeguard} target="_blank">safeguarding Policy</a>
         </div>
         </div>
         </div>
