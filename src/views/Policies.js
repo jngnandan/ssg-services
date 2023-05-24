@@ -9,6 +9,7 @@ import ourValues from '../../src/assets/documents/our-values-and-mission-stateme
 import violence from '../../src/assets/documents/voilence-pollicy.pdf'
 import quality from '../../src/assets/documents/Quality-policy.pdf'
 import wasteManagement from '../../src/assets/documents/wastemanagement-policy.pdf'
+import safeguard from '../../src/assets/documents/safeguarding.pdf'
 
 import {AiOutlineFilePdf} from 'react-icons/ai'
 
@@ -54,6 +55,9 @@ const Policies = () => {
         <div className="hover:text-gray-500 flex flex-row items-center">
         <AiOutlineFilePdf />
         <a className="" href={wasteManagement} target="_blank">Waste management Policy</a>
+        <div className="hover:text-gray-500 flex flex-row items-center">
+        <AiOutlineFilePdf />
+        <a className="" href={safeguarding} target="_blank">safeguarding Policy</a>
         </div>
         </div>
         </div>
