@@ -52,10 +52,7 @@ export default function Header() {
             <Link to='/clearning-services' onClick={() => setNavbarOpen(!navbarOpen)}>
                 <p className='py-3 text-white hover:text-black w-full'>Cleaning Services</p>
             </Link>
-            <a href="https://www.knockoutzone.co.uk/" onClick={() => setNavbarOpen(!navbarOpen)}>
-                <p className='py-3 text-white hover:text-black w-full'>Boxing</p>
-            </a>
-
+            
             <Link to='/contactus' onClick={() => setNavbarOpen(!navbarOpen)}>
               <p className='py-3 text-white hover:text-black w-full'>Contact us</p>
             </Link>
