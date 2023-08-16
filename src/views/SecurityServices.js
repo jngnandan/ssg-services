@@ -191,7 +191,13 @@ export default function SecurityServices() {
             <img src={sia} className='h-14 md:h-28 my-0' alt='Security' />
             <hr className='border-sky-60 pb-3'/>
             {/* <p className='text-sm md:text-md font-medium text-sky-600 pb-2'>We are SIA ACS approved contractor</p> */}
-            <p className='text-sm md:text-md font-medium text-sky-600 pb-2'>Secure Security Guards Ltd currently holds SIA Approved Contractor Scheme (ACS) status for the provision of Security Guarding.</p>
+            <head>
+             <title>Secure Security Guards Ltd currently holds SIA Approved Contractor Scheme (ACS) status for the provision of Security Guarding.</title>
+            </head>
+            <body>
+              <a href="https://www.services.sia.homeoffice.gov.uk/Pages/acs-roac.aspx?contractor=SESEGUSC01" target="_blank">Secure Security Guards Ltd currently holds SIA Approved Contractor Scheme (ACS) status for the provision of Security Guarding.</a>
+            </body>
+            {/* <p className='text-sm md:text-md font-medium text-sky-600 pb-2'></p> */}
             <p className='text-sm text-gray-600 line-clamp-7'>Secure Security Guards Ltd currently holds SIA Approved Contractor Scheme (ACS) status for the provision of Security Guarding. We are an established company with over 7 years of experience in the security industry. We are licensed, bonded, and insured, so you can be assured that we will do everything we can to protect your property or event.</p>
           </div>
           <div className='bg-red-800 p-4 rounded-md mb-2'>
