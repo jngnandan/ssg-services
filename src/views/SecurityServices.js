@@ -333,8 +333,8 @@ export default function SecurityServices() {
       <div className="pl-2 mt-3 text-gray-800 font-medium">
       
 
-      <p className="text-gray-800"><span className="mt-3">Tel:</span> 020 3900 2489</p>
-      <p className="text-gray-800"><span className="mt-3">Tel:</span> 08003688613</p>
+      {/* <p className="text-gray-800"><span className="mt-3">Tel:</span> 020 3900 2489</p> */}
+      <p className="text-gray-800"><span className="mt-3">Mobile:</span> +44 7703551379</p>
       <p className="text-gray-800"><span className="mt-3">Fax: </span>02039001936</p>
         
       <p className="text-gray-800"><span className="mt-3">Email:</span> info@ssgsecurity.co.uk</p>
