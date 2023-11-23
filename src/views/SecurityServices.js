@@ -338,7 +338,7 @@ export default function SecurityServices() {
       <p className="text-gray-800"><span className="mt-3">Fax: </span>02039001936</p>
         
       <p className="text-gray-800"><span className="mt-3">Email:</span> info@ssgsecurity.co.uk</p>
-      <p className="text-gray-800"><span className="mt-3">Address: </span>Jhumat House, 160 London Road, Barking IG11 8BB</p>
+      <p className="text-gray-800"><span className="mt-3">Address: </span>Suite E, 1st floor Phoenix Building, 3 Ajax Works, Hertford Rd, IG11 8DY</p>
 
       </div>
           <hr className='border-gray-500 my-4 mb-6' />
