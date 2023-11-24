@@ -334,13 +334,11 @@ export default function SecurityServices() {
       
 
       {/* <p className="text-gray-800"><span className="mt-3">Tel:</span> 020 3900 2489</p> */}
-      <p className="text-gray-800"><span className="mt-3">Mobile:</span> +44 7703551379</p>
-      <p className="text-gray-800"><span className="mt-3">Fax: </span>02039001936</p>
-        
       <p className="text-gray-800"><span className="mt-3">Email:</span> info@ssgsecurity.co.uk</p>
-      <p className="text-gray-800"><span className="mt-3">London Address: </span>Suite E, 1st floor Phoenix Building, 3 Ajax Works, Hertford Rd, IG11 8DY</p>
-      <p className="text-gray-800"><span className="mt-3">Land line-1:</span> 02039002489 </p>
-      <p className="text-gray-800"><span className="mt-3">Land line-2:</span> 08003688613 </p>
+      <p className="text-gray-800"><span className="mt-3">Fax: </span> 02039001936 </p>
+      <p className="text-gray-800"><span className="mt-3">London Address: </span> Suite E, 1st floor Phoenix Building, 3 Ajax Works, Hertford Rd, IG11 8DY</p>
+      <p className="text-gray-800"><span className="mt-3">Land line-1:</span>  02039002489 </p>
+      <p className="text-gray-800"><span className="mt-3">Land line-2:</span>  08003688613 </p>
       <p className="text-gray-800"><span className="mt-3">Manchester Address: </span> Office No 4.4, 4th Floor, Purple Zone,Universal SquareDevonshire Street North, Ardwick, Manchester, M12 6JH</p>
       <p className="text-gray-800"><span className="mt-3">Land line:</span> 0161 974 6513</p>
       </div>
