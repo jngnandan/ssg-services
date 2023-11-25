@@ -13,10 +13,10 @@ export default function Header() {
 
   return (
     <div>
-        <div className='shadow flex flex-row justify-between items-center h-16 px-6  lg:px-44 xl:px-60 font-medium text-sm'>
+        <div className='shadow flex flex-row justify-between items-center h-16 px-8  lg:px-44 xl:px-60 font-medium text-sm'>
           <div className='' onClick={() => setNavbarOpen(true)}>
           <Link to='/security-services'>
-            <img src={ssglogo} className='md:w-20 md:h-20 my-2 w-24' />
+            <img src={ssglogo} className='md:w-23 md:h-23 my-2  w-24' />
           </Link>
           </div>
 

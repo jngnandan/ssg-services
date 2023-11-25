@@ -8,10 +8,14 @@ export class ContactUs extends Component {
             <div className='bg-gray-100 px-6 md:px-16 lg:px-44 xl:px-60 py-10'>
       <h2 className='text-2xl text-gray-800 font-semibold'>Contact Us</h2>
             <div className="pl-2 mt-3 text-gray-800 font-medium">
-      <p className="text-gray-800"><span className="mt-3">Landline: </span>020 3900 2489</p>
-      <p className="text-gray-800"><span className="mt-3">Email: </span>info@ssgsecurity.co.uk</p>
-      <p className="text-gray-800"><span className="mt-3">Address: </span>Jhumat House, 160 London Road, Barking IG11 8BB</p>
+      <p className="text-gray-800"><span className="mt-3">Email:</span> info@ssgsecurity.co.uk</p>
+      <p className="text-gray-800"><span className="mt-3">Tel:</span>  02039002489 </p>
+      <p className="text-gray-800"><span className="mt-3">Tel:</span>  08003688613 </p>
+      <p className="text-gray-800"><span className="mt-3">Fax: </span> 02039001936 </p>
+      <p className="text-gray-800"><span className="mt-3">Head Office :</span> Secure Security Guards Ltd, Suite E, 1st floor Phoenix Building, 3 Ajax Works, Hertford Rd, IG11 8DY</p>
 
+      <p className="text-gray-800"><span className="mt-3">Manchester Branch : </span> Secure Security Guards Ltd, No 4.4, 4th Floor, Purple Zone,Universal SquareDevonshire Street North, Ardwick, Manchester, M12 6JH</p>
+      <p className="text-gray-800"><span className="mt-3">Tel:</span> 0161 974 6513</p>
       </div>
           <hr className='border-gray-500 my-4 mb-6' />
           
