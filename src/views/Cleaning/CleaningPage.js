@@ -50,17 +50,17 @@ export default function CleaningPage() {
         <div className='px-6  lg:px-44 xl:px-60'>
     <Link to='/cleaning-services'>
     <button className='h-12 flex flex-row justify-start items-center'>
-        <img src={back} className='y-3' alt=''/>
-        <p className='pl-2 font-semibold text-gray-600 pb-0.5'>Cleaning Services</p>
+        {/* <img src={back} className='y-3' alt=''/> */}
+        <p className='pl-2 font-semibold text-gray-600 pb-0.5'>URL: <a href="http://www.ssgcleaning.co.uk/"></a>Cleaning Services</p>
     </button>
-    </Link>
+    {/* </Link>
     <img className='' src={img} alt={title} />
     <h1 className='py-5 text-xl md:text-3xl font-semibold text-gray-800'>{title}</h1>
       <p className='text-gray-500'>{content}</p>
     </div>    
     }
 
-    </>
+    </> */}
  
   )
 }
