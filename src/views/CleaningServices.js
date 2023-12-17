@@ -1,4 +1,4 @@
-/*
+
 import React, { useEffect, useState, useContext, useMemo } from 'react'
 import sia from '../../src/assets/icons/sia-approved.svg'
 import flexible from '../assets/icons/flexible.svg'
@@ -42,31 +42,30 @@ export default function CleaningServices() {
 
   return (
     <div>
-    {/* Cleaning */}/*
+    {/* Cleaning */}
     <div className=''>
-      {/* 2 Texts */}/*
-      
+      {/* 2 Texts */}
           <div className=' pt-8 pb-4 px-6 md:px-16 lg:px-44 xl:px-60 grid-row-2 items-start grid md:grid-cols-2 gap-1'>
-              {/* Text */}/*
+              {/* Text */}
               <div className='pr-6'>
               <h1 className='text-xl md:text-3xl font-semibold text-gray-800'>
                   We Provide Cleaning Solutions <span className='text-gray-500'>to your Everyday Hussles</span>
               </h1>
               
               </div>
-              {/* text 2 */}/*
+              {/* text 2 */}
               <p className='text-sm text-gray-500 my-4 lg:w-120'>Are you looking for a solution for your everyday cleaning hassles? Want to get our your mess and live peacefully ‍‍</p>
             </div>
 
-              {/* Image */}/*
+              {/* Image */}
           <img src={cleaningS} className='object-cover h-80 lg:h-96 w-full mt-1' />
-          {/* Second section */}/*
+          {/* Second section */}
           <div className=''>
           <div className='px-6'>
           <hr className='border-gray-500 mt-4 mb-3 mt-8' />
           </div>
           <div className='pt-3 pb-4 px-6 md:px-16 lg:px-44 xl:px-60 grid-row-2 items-start grid md:grid-cols-2 gap-1'>
-              {/* Text */}/*
+              {/* Text */}
               <div className='pr-6'>
               <h1 className='text-xl md:text-3xl font-semibold text-gray-500'>
                   We Provide the right Solutions
@@ -80,7 +79,7 @@ export default function CleaningServices() {
               </div>
               
               </div>
-              {/* text 2 */}/*
+              {/* text 2 */}
               <div>
               <p className='text-sm text-gray-800 md:mt-2 lg:w-120 font-semibold'>We have the experience for your cleaning needs</p>
               <p className='text-sm text-gray-500 my-2 lg:w-120'>Our experienced cleaners and maids can efficiently clean any size home. Our domestic helpers are available throughout the day to give you as much flexibility as you need. Simply decide how many hours you need a cleaner for, that fits your requirement and budget and book accordingly.
@@ -90,7 +89,7 @@ export default function CleaningServices() {
           </div>
     </div>
 
-    {/* New Services */}/*
+    {/* New Services */}
     <div id='services' className='bg-gray-100 px-6 md:px-16 lg:px-44 xl:px-60 py-10'>
       <h2 className='text-2xl text-gray-800 font-semibold'>New</h2>
           <hr className='border-gray-500 my-4 mb-6' />
@@ -117,7 +116,7 @@ export default function CleaningServices() {
             </div>
           }
       </div>
-      {/* Get in Touch with Us */}/*
+      {/* Get in Touch with Us */}
       <div id='contactus' className='bg-white px-6 md:px-16 lg:px-44 xl:px-60 py-10'>
       <h2 className='text-2xl text-gray-800 font-semibold'>Contact Us</h2>
           <hr className='border-gray-500 my-4 mb-6' />
@@ -154,4 +153,3 @@ export default function CleaningServices() {
     </div>
   )
 }
-*/
