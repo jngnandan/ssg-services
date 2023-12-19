@@ -28,7 +28,7 @@ export default function Header() {
                 <p className='mx-2'>Cleaning Services</p>
             </Link> */}
 
-           <a href ="http://www.ssgcleaning.co.uk/"> Cleaning Services </a>
+           <a href ="http://www.ssgcleaning.co.uk/" target="_blank"> Cleaning Services </a>
             <Link to='/contactus'>
               <p className='mx-2'>Contact us</p>
             </Link>
@@ -50,9 +50,9 @@ export default function Header() {
           <Link to='/security-services' onClick={() => setNavbarOpen(!navbarOpen)}>
                 <p className='py-3 text-white hover:text-black w-full'>Security Services</p>
             </Link>
-            <Link to='{http://www.ssgcleaning.co.uk/}' onClick={() => setNavbarOpen(!navbarOpen)}>
+            {/* <Link to='{http://www.ssgcleaning.co.uk/}' onClick={() => setNavbarOpen(!navbarOpen)}>
                 <p className='py-3 text-white hover:text-black w-full'>Cleaning Services</p>
-            </Link>
+            </Link> */}
             
             <Link to='/contactus' onClick={() => setNavbarOpen(!navbarOpen)}>
               <p className='py-3 text-white hover:text-black w-full'>Contact us</p>
