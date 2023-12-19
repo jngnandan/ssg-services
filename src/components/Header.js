@@ -24,10 +24,11 @@ export default function Header() {
             <HashLink to='/#security-services'>
                 <p className='mx-2'>Security Services</p>
             </HashLink>
-            <Link to='/clearning-services'>
+            {/* <Link to='/clearning-services'>
                 <p className='mx-2'>Cleaning Services</p>
-            </Link>
+            </Link> */}
 
+           <a href ="http://www.ssgcleaning.co.uk/"> Cleaning Services </a>
             <Link to='/contactus'>
               <p className='mx-2'>Contact us</p>
             </Link>
@@ -49,7 +50,7 @@ export default function Header() {
           <Link to='/security-services' onClick={() => setNavbarOpen(!navbarOpen)}>
                 <p className='py-3 text-white hover:text-black w-full'>Security Services</p>
             </Link>
-            <Link to='/clearning-services' onClick={() => setNavbarOpen(!navbarOpen)}>
+            <Link to='{http://www.ssgcleaning.co.uk/}' onClick={() => setNavbarOpen(!navbarOpen)}>
                 <p className='py-3 text-white hover:text-black w-full'>Cleaning Services</p>
             </Link>
             
