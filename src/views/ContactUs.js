@@ -12,9 +12,9 @@ export class ContactUs extends Component {
       <p className="text-gray-800"><span className="mt-3">Tel:</span>  02039002489 </p>
       <p className="text-gray-800"><span className="mt-3">Tel:</span>  08003688613 </p>
       <p className="text-gray-800"><span className="mt-3">Fax: </span> 02039001936 </p>
-      <p className="text-gray-800"><span className="mt-3">Head Office :</span> Secure Security Guards Ltd, Suite E, 1st floor Phoenix Building, 3 Ajax Works, Hertford Rd, IG11 8DY</p>
+      <p className="text-gray-800"><span className="mt-3">Head Office :</span> "Secure Security  Ltd <br /> \n Suite E, 1st floor Phoenix Building, <br />3 Ajax Works Hertford Rd, <br /> London,IG11 8DY"</p>
 
-      <p className="text-gray-800"><span className="mt-3">Manchester Branch : </span> Secure Security Guards Ltd, No 4.4, 4th Floor, Purple Zone,Universal SquareDevonshire Street North, Ardwick, Manchester, M12 6JH</p>
+      <p className="text-gray-800"><span className="mt-3">Manchester Branch : </span> Secure Security Guards Ltd, <br />No 4.4, 4th Floor, Purple Zone,<br />Universal SquareDevonshire Street North,<br /> Ardwick, Manchester, M12 6JH</p>
       <p className="text-gray-800"><span className="mt-3">Tel:</span> 0161 974 6513</p>
       </div>
           <hr className='border-gray-500 my-4 mb-6' />
