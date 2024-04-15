@@ -1,5 +1,7 @@
 
-// import Home from './views/Home';
+// 
+
+import Home from './views/Home';
 // import {BrowserRouter, Routes, Route, redirect, Navigate} from 'react-router-dom';
 // import ContactUs from './views/ContactUs';
 // import Header from './components/Header';
