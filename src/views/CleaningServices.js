@@ -48,7 +48,7 @@ export default function CleaningServices() {
           <div className=' pt-8 pb-4 px-6 md:px-16 lg:px-44 xl:px-60 grid-row-2 items-start grid md:grid-cols-2 gap-1'>
               {/* Text */}
               <div className='pr-6'>
-              <hjbhjjhjhh1 className='text-xl md:text-3xl font-semibold text-gray-800'>
+              < h1 className='text-xl md:text-3xl font-semibold text-gray-800'>
                   We Provide Cleaning Solutions <span className='text-gray-500'>to your Everyday Hussles</span>
               </h1>
               
