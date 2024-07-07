@@ -46,7 +46,7 @@ function App() {
           path="/"
           element={<Navigate to="/security-services" replace />}
           />
-          <Route path='/cleaning-services/:id' element={<CleaningPage />} />
+          {/* <Route path='/cleaning-services/:id' element={<CleaningPage />} /> */}
           <Route path='/thanks' element={<Thanks />} />
           <Route path='/policies' element={<Policies />} />
           <Route path='/:id' element={<ViewPolicy />}/>
