@@ -203,7 +203,7 @@ export default function SecurityServices() {
           <img src={established} className='h-10 md:h-20 my-4 md:pl-2' alt='Security' />
             <hr className='pb-3'/>
             <p className='text-sm md:text-md font-medium text-white pb-2'>Comprehensive security services, at competitive prices.</p>
-            <p className='text-sm text-gray-200 line-clamp-7'>We are a company that offers full range of security services and we also provide 24/7 monitoring services at all times from pubs, clubs and corporate security to and key holding, Mobile Patrol and CCTV Survilence </p>
+            {/* <p className='text-sm text-gray-200 line-clamp-7'>We are a company that offers full range of security services and we also provide 24/7 monitoring services at all times from pubs, clubs and corporate security to and key holding, Mobile Patrol and CCTV Survilence </p> */}
           </div>
           <div className='bg-red-800 p-4 rounded-md text-white mb-2'>
           <img src={flexible} className='h-10 md:h-20 my-4 md:pl-2' alt='Security' />
