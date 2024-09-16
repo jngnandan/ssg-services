@@ -347,6 +347,7 @@ export default function SecurityServices() {
         <p className="text-gray-800"><span className="">Tel:</span>02039001936</p>
 
         </div>
+        <p className="text-gray-800"><span className="mt-3"></span>SECURE SECURITY GUARDS LTD - a company registered in England and Wales-Company Number 10639286</p>
 
         {/* <div className='border border-solid border-1 border-gray-400 bg-gray-200 rounded shadow-sm p-3'>
         <p className="text-gray-800 "><span className="font-semibold">Manchester Branch :<br/> </span> Secure Security Guards Ltd, <br />No 4, 4th Floor, Purple Zone,<br />North Street,<br /> Ardwick, Manchester, M12 6JH</p>
